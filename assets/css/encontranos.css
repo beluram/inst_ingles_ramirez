@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "menu"
+        "header"
+        "main"
+        "footer";
+}
+
+a {
+    text-decoration: none;
+    color: #143666;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+}
+
+.logo img {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.sizewhatsapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizeinstagram {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizefacebook {
+    width: 35px;
+    height: 37px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.menu {
+    grid-area: menu;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.redes {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px;
+}
+
+
+header {
+    grid-area: header;
+    background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
+    height: 500px;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: wrap;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold 90px;
+    font-size: 70px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "mapa"
+        "online";
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+#direccion {
+    width: 55%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+    padding: 15px;
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacion {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.clasesonline {
+    grid-area: online;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+}
+
+.online {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.titulocursos {
+    margin-left: 15px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    flex-direction: wrap;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold 90px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.descripcion {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.titulo {
+    margin-left: 15px;
+    height: 70px;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    flex-direction: wrap;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold 90px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(min-width:1200px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-areas: "menu   menu"
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    a {
+        text-decoration: none;
+        color: #143666;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin: 0px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .sizewhatsapp {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizeinstagram {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizefacebook {
+        width: 35px;
+        height: 37px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .menu {
+        grid-area: menu;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .redes {
+        padding: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    header {
+        grid-area: header;
+        background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: wrap;
+        color: #2E5399;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold 90px;
+        font-size: 70px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        margin-bottom: auto;
+    }
+
+    main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "mapa online";
+    }
+
+    .mapa {
+        grid-area: mapa;
+    }
+
+    #direccion {
+        width: 55%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    iframe {
+        padding: 15px;
+        margin: 35px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ubicacion {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .clasesonline {
+        grid-area: online;
+        justify-content: center;
+        text-align: justify;
+        align-items: center;
+        margin: 30px;
+        padding: 30px;
+    }
+
+    .online {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .titulocursos {
+        margin-left: 15px;
+        height: 70px;
+        position: relative;
+        display: flex;
+        justify-content: left;
+        flex-direction: wrap;
+        color: #2E5399;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold 90px;
+        font-size: 35px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+    .descripcion {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo {
+        margin-left: 15px;
+        height: 70px;
+        position: absolute;
+        display: flex;
+        justify-content: left;
+        text-align: center;
+        flex-direction: wrap;
+        color: #2E5399;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold 90px;
+        font-size: 35px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+    footer {
+        grid-area: footer;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

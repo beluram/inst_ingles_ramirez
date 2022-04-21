@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "menu   menu"
+        "header header"
+        "cursos cursos"
+        "cursos cursos"
+        "footer footer";
+}
+
+a {
+    text-decoration: none;
+    color: #143666;
+}
+
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.sizewhatsapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizeinstagram {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizefacebook {
+    width: 35px;
+    height: 37px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.menu {
+    grid-area: menu;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.redes {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px;
+}
+
+header {
+    grid-area: header;
+    background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
+    height: 500px;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: wrap;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold 90px;
+    font-size: 70px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+}
+
+.cardcontenedor {
+    grid-area: cursos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "kids teens"
+        "senior examenes";
+}
+
+.cardkinder {
+    grid-area: kids;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.cardteens {
+    grid-area: teens;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.cardsenior {
+    grid-area: senior;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.cardexamenes {
+    grid-area: examenes;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
+}
+
+h3 {
+    display: flex;
+    flex-direction: wrap;
+    display: inline-block;
+    align-items: stretch;
+    width: 180px;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #143666;
+}
+
+.listacursos li {
+    width: 180px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(min-width:1200px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-areas: "menu   menu   menu   menu"
+            "header header header header"
+            "cursos cursos cursos cursos"
+            "footer footer footer footer";
+    }
+
+    a {
+        text-decoration: none;
+        color: #143666;
+    }
+
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin: 0px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .sizewhatsapp {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizeinstagram {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizefacebook {
+        width: 35px;
+        height: 37px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .menu {
+        grid-area: menu;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .redes {
+        padding: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .menu li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    header {
+        grid-area: header;
+        background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: wrap;
+        color: #2E5399;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold 90px;
+        font-size: 70px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+    h1 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .cardcontenedor {
+        grid-area: cursos;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 15px;
+        margin: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "kids teens senior examenes";
+    }
+
+    .cardkinder {
+        grid-area: kids;
+        justify-content: center;
+        margin: 0px auto;
+        align-items: center;
+    }
+
+    .cardteens {
+        grid-area: teens;
+        justify-content: center;
+        margin: 0px auto;
+        align-items: center;
+    }
+
+    .cardsenior {
+        grid-area: senior;
+        justify-content: center;
+        margin: 0px auto;
+        align-items: center;
+    }
+
+    .cardexamenes {
+        grid-area: examenes;
+        justify-content: center;
+        margin: 0px auto;
+        align-items: center;
+    }
+
+    h3 {
+        display: flex;
+        flex-direction: wrap;
+        display: inline-block;
+        align-items: stretch;
+        width: 180px;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #143666;
+    }
+
+    .listacursos li {
+        width: 180px;
+        font-size: 24px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    footer {
+        grid-area: footer;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
