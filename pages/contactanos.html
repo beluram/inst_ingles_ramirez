@@ -6,6 +6,7 @@
   <title>Instituto Big Ben</title>
   <link rel="shortcut icon" href="../assets/Favicon/favicon-32x32.png">
   <link rel="stylesheet" href="../assets/css/contactanos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -39,10 +40,10 @@
   </header>
 
   <main class="main-container">
-    <div class="main-img">
+    <div data-aos="fade-right" class="main-img">
       <img src="..//assets/img/felices-dos-jovenes-estudiantes-cuadernos-mochilas-sonriendo-mostrando-pulgar-arriba_8353-6386.webp">
     </div>
-    <div class="main-form">
+    <div  data-aos="fade-left" class="main-form">
     <h2 class="titulo">Contactanos:</h2>
     <form id="este-form" action="./contactanos.html" class="formulario" method="GET">
       <div class="form-section">
@@ -104,7 +105,8 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>
