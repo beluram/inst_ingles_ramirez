@@ -16,6 +16,7 @@
 a {
     text-decoration: none;
     color: #143666;
+    position: relative;
 }
 
 .logo {
@@ -54,12 +55,16 @@ a {
 }
 
 .menu {
+    background-color: white;
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 }
 
 .redes {
@@ -68,12 +73,30 @@ a {
 
 ul {
     list-style: none;
+    position: relative;
 }
 
 ul li {
     display: inline-block;
     font-size: 20px;
     padding: 15px;
+}
+
+ul li a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color:#2E5399;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    transform: scale(0);
+    transform-origin: left ;
+    transition: transform .25s ease;
+}
+
+ul li a:hover::after{
+    transform: scale(1);
 }
 
 header {
@@ -115,16 +138,47 @@ h1 {
     word-spacing: 3px;
 }
 
-.formulario {
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+.main-img{
+    display: none;
+}
+.main-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.main-form {
+    background-color: #80afff5b;
+    height: max-content;
+    box-shadow: 5px 10px 5px gray;
+    border-radius: 4px;
+    width: 600px;
     padding: 15px;
     margin: 15px;
+} 
+.formulario{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    text-align: justify;
+    text-align: left;
     font-size: 18px;
     line-height: 30px;
 }
 
+.form-input{
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    width: 90%;
+    border-radius: 4px;
+    height: 35px;
+    border: none;
+}
 
 footer {
     width: 100%;
@@ -149,6 +203,7 @@ footer {
     a {
         text-decoration: none;
         color: #143666;
+        position:relative;
     }
 
     .logo {
@@ -156,7 +211,9 @@ footer {
         height: 80px;
         margin: 0px;
     }
-
+.logo:hover{
+    transform: scale(1.1);
+}
     .logo img {
         width: 100%;
         height: 100%;
@@ -198,7 +255,9 @@ footer {
     .redes {
         padding: 10px;
     }
-
+.redes:hover{
+    transform: scale(1.1);
+}
     ul {
         list-style: none;
     }
@@ -208,7 +267,22 @@ footer {
         font-size: 20px;
         padding: 15px;
     }
-
+    ul li a::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color:#2E5399;
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+        transform: scale(0);
+        transform-origin: left ;
+        transition: transform .25s ease;
+    }
+    
+    ul li a:hover::after{
+        transform: scale(1);
+    }
     header {
         background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
         height: 500px;
@@ -249,17 +323,49 @@ footer {
         letter-spacing: 1px;
         word-spacing: 3px;
     }
-
-    .formulario {
+    .main-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px;
+    }
+    .main-img{
+        display: flex;
+    }
+    
+    .main-img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    
+    .main-form {
+        background-color: #80afff5b;
+        height: max-content;
+        box-shadow: 5px 10px 5px gray;
+        border-radius: 4px;
+        width: 600px;
         padding: 15px;
         margin: 15px;
+    } 
+    .formulario{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
-        text-align: justify;
+        text-align: left;
         font-size: 18px;
         line-height: 30px;
     }
-
+    
+    .form-input{
+        padding: 10px;
+        margin: 10px 10px 10px 0;
+        width: 90%;
+        border-radius: 4px;
+        height: 35px;
+        border: none;
+    }
+    
 
     footer {
         width: 100%;

@@ -38,26 +38,30 @@
     <h1>Big Ben School of English</h1>
   </header>
 
-  <main class="formulario">
+  <main class="main-container">
+    <div class="main-img">
+      <img src="..//assets/img/felices-dos-jovenes-estudiantes-cuadernos-mochilas-sonriendo-mostrando-pulgar-arriba_8353-6386.webp">
+    </div>
+    <div class="main-form">
     <h2 class="titulo">Contactanos:</h2>
-    <form id="este-form" action="./contactanos.html" method="GET">
+    <form id="este-form" action="./contactanos.html" class="formulario" method="GET">
       <div class="form-section">
         <label for="input-texto">Nombre: </label>
-        <input id="input-texto" type="text" name="input-texto" placeholder="Escribe tu nombre.." />
+        <input class="form-input" type="text" name="input-texto" placeholder="Escribe tu nombre.." />
       </div>
       <div class="form-section">
         <label for="input-email">Email: </label>
-        <input id="input-email" type="email" name="input-Email" placeholder="Escribe tu Email.." />
+        <input class="form-input" type="email" name="input-Email" placeholder="Escribe tu Email.." />
       </div>
       <div class="form-section">
         <label for="input-number">Teléfono: </label>
-        <input type="tel" name="input-number" id="input-number" placeholder="Ingresa tu número" />
+        <input class="form-input" name="input-number" id="input-number" placeholder="Ingresa tu número" />
       </div>
 
       <label for="Cursos">
         <span>Elige un curso:</span>
       </label>
-      <select id="curso" name="curso">
+      <select class="form-input" name="curso">
         <label for="form">Cursos</label>
         <option value="Infantil">Infantil</option>
         <option value="Adolescente">Adolescente</option>
@@ -78,10 +82,11 @@
 
       <label for="input-textarea">¿Desea recibir información acerca de nuestros cursos?:</label>
       <label for="newsletter">Si</label>
-      <input type="radio" name="newsletter" value="Si">
+      <input  type="radio" name="newsletter" value="Si">
       <label for="newsletter">No</label>
       <input type="radio" name="newsletter" value="No">
     </form>
+  </div>
   </main>
 
 
