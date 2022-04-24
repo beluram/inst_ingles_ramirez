@@ -73,6 +73,7 @@ a {
 .redes {
     padding: 10px;
 }
+
 .redes:hover {
     transform: scale(1.1);
 }
@@ -115,7 +116,7 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction:initial;
+    flex-direction: initial;
     color: #2E5399;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold 90px;
@@ -142,11 +143,12 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "kids" 
-                        "teens"
-                        "senior" 
-                        "examenes";
+    grid-template-areas: "kids"
+        "teens"
+        "senior"
+        "examenes";
 }
+
 
 .cardkinder {
     grid-area: kids;
@@ -283,6 +285,7 @@ footer {
     .redes {
         padding: 10px;
     }
+
     .redes:hover {
         transform: scale(1.1);
     }
@@ -309,7 +312,7 @@ footer {
         transform-origin: left;
         transition: transform .25s ease;
     }
-    
+
     ul li a:hover::after {
         transform: scale(1);
     }
@@ -395,6 +398,10 @@ footer {
         color: #143666;
     }
 
+    h3:hover {
+        transform: scale(1.1);
+    }
+
     .listacursos li {
         width: 180px;
         font-size: 24px;
@@ -403,6 +410,10 @@ footer {
         position: relative;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+    }
+
+    .listacursos:hover {
+        transform: scale(1.1);
     }
 
     footer {
