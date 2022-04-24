@@ -138,72 +138,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "mapa"
-        "online";
-}
-
-.mapa {
-    grid-area: mapa;
-}
-
-#direccion {
-    width: 55%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-iframe {
-    padding: 15px;
-    margin: 35px;
-    display: flex;
-    justify-content: center;
-}
-
-.ubicacion {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
-    font-size: 18px;
-}
-
-.clasesonline {
-    grid-area: online;
-    justify-content: center;
-    text-align: justify;
-    align-items: center;
-}
-
-.online {
-    width: 60px;
-    height: 60px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.titulocursos {
-    margin-left: 15px;
-    height: 70px;
-    position: relative;
-    display: flex;
-    justify-content: left;
-    flex-direction: wrap;
-    color: #2E5399;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold 90px;
-    font-size: 35px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-}
-
-.descripcion {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
-
+                        "online";
 }
 
 .titulo {
@@ -220,6 +155,81 @@ iframe {
     font-size: 35px;
     letter-spacing: 1px;
     word-spacing: 3px;
+}
+.mapa {
+    grid-area: mapa;
+}
+
+.direccion {
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+    padding: 15px;
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacion {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    font-size: 18px;
+}
+
+.online-contenedor {
+    background-color: #80afff5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    box-shadow: 5px 10px 5px gray;
+    border-radius: 4px;
+    width: 600px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.online {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.online img{
+    height: 100%;
+    width: 100%;
+}
+
+.titulocursos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold 90px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.descripcion {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
@@ -254,9 +264,11 @@ footer {
         height: 80px;
         margin: 0px;
     }
+
     .logo:hover {
         transform: scale(1.1);
     }
+
     .logo img {
         width: 100%;
         height: 100%;
@@ -303,9 +315,11 @@ footer {
     .redes {
         padding: 10px;
     }
+
     .redes:hover {
         transform: scale(1.1);
     }
+
     ul {
         list-style: none;
     }
@@ -328,6 +342,7 @@ footer {
         transform-origin: left;
         transition: transform .25s ease;
     }
+
     ul li a:hover::after {
         transform: scale(1);
     }
@@ -359,79 +374,11 @@ footer {
         margin-bottom: auto;
     }
 
-    main {
-        grid-area: main;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "mapa online";
-    }
-
-    .mapa {
-        grid-area: mapa;
-    }
-
-    #direccion {
-        width: 55%;
-        height: auto;
+    .main-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    iframe {
-        padding: 15px;
-        margin: 35px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .ubicacion {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        text-align: justify;
-        font-size: 18px;
-    }
-
-    .online-contenedor {
-        background-color: #80afff5b;
-        height: max-content;
-        box-shadow: 5px 10px 5px gray;
-        border-radius: 4px;
-        width: 600px;
-        padding: 15px;
-        margin: 15px;
-    }
-
-    .online img{
-        width: 60px;
-        height: 60px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .titulocursos {
-        margin-left: 15px;
-        height: 70px;
-        position: relative;
-        display: flex;
-        justify-content: left;
-        flex-direction: wrap;
-        color: #2E5399;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold 90px;
-        font-size: 35px;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-    }
-
-    .descripcion {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        margin: 50px;
     }
 
     .titulo {
@@ -448,6 +395,78 @@ footer {
         font-size: 35px;
         letter-spacing: 1px;
         word-spacing: 3px;
+    }
+
+    .direccion {
+        height: auto;
+        display: flex;
+        justify-content: left;
+        align-items:baseline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    iframe {
+        padding: 15px;
+        margin: 35px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ubicacion {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .online-contenedor {
+        background-color: #80afff5b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        box-shadow: 5px 10px 5px gray;
+        border-radius: 4px;
+        width: 600px;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .online {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .online img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .titulocursos {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #2E5399;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold 90px;
+        font-size: 35px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+    .descripcion {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
     }
 
     footer {
