@@ -24,7 +24,7 @@ a {
 .logo {
     width: 80px;
     height: 80px;
-    margin: 0px;
+    margin:0px;
 }
 .logo:hover {
     transform: scale(1.1);
