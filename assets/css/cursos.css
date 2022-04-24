@@ -5,13 +5,13 @@
 
 .contenedor {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 100px auto auto 100px;
-    grid-template-areas: "menu   menu"
-        "header header"
-        "cursos cursos"
-        "cursos cursos"
-        "footer footer";
+    grid-template-areas: "menu "
+        "header"
+        "cursos"
+        "cursos"
+        "footer";
 }
 
 a {
@@ -87,14 +87,15 @@ header {
     grid-area: header;
     background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
     height: 500px;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    width: min(100%, calc(100% + 100px));
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: wrap;
-    color: #153166;
+    flex-direction:initial;
+    color: #2E5399;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold 90px;
     font-size: 70px;
@@ -104,8 +105,10 @@ header {
 
 h1 {
     text-align: center;
-    justify-content: center;
-    background-color: rgba(61, 119, 245, 0.250);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-size: clamp (3rem, 3vw, 3rem);
 }
 
 .cardcontenedor {
@@ -116,10 +119,12 @@ h1 {
     padding: 15px;
     margin: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "kids teens"
-        "senior examenes";
+    grid-template-areas: "kids" 
+                        "teens"
+                        "senior" 
+                        "examenes";
 }
 
 .cardkinder {
@@ -264,7 +269,6 @@ footer {
     }
 
     header {
-        grid-area: header;
         background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
         height: 500px;
         background-size: cover;
@@ -274,7 +278,7 @@ footer {
         justify-content: center;
         text-align: center;
         flex-direction: wrap;
-        color: #153166;
+        color: #2E5399;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold 90px;
         font-size: 70px;
@@ -284,8 +288,10 @@ footer {
 
     h1 {
         text-align: center;
-        justify-content: center;
-        background-color: rgba(61, 119, 245, 0.250);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        margin-bottom: auto;
     }
 
     .cardcontenedor {

@@ -6,7 +6,7 @@
 .contenedor {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto auto 100px;
+    grid-template-rows: 150px auto auto 100px;
     grid-template-areas: "menu "
         "header"
         "main"
@@ -57,8 +57,9 @@ a {
 .menu {
     background-color: white;
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
+    flex-direction: wrap;
     justify-content: space-between;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -77,25 +78,30 @@ ul {
 }
 
 ul li {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 20px;
-    padding: 15px;
+    letter-spacing: 2px;
+    padding: 0px;
+    margin: 2px;
+    text-align: center;
 }
 
 ul li a::after {
     content: "";
     width: 100%;
     height: 2px;
-    background-color:#2E5399;
+    background-color: #2E5399;
     position: absolute;
     left: 0;
     bottom: 0%;
     transform: scale(0);
-    transform-origin: left ;
+    transform-origin: left;
     transition: transform .25s ease;
 }
 
-ul li a:hover::after{
+ul li a:hover::after {
     transform: scale(1);
 }
 
@@ -103,13 +109,14 @@ header {
     grid-area: header;
     background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
     height: 500px;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    width: min(100%, calc(100% + 100px));
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: wrap;
+    flex-direction:initial;
     color: #2E5399;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold 90px;
@@ -120,7 +127,10 @@ header {
 
 h1 {
     text-align: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-size: clamp (3rem, 3vw, 3rem);
 }
 
 .titulo {
@@ -138,16 +148,18 @@ h1 {
     word-spacing: 3px;
 }
 
-.main-container{
+.main-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 50px;
 }
-.main-img{
+
+.main-img {
     display: none;
 }
-.main-img img{
+
+.main-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -162,8 +174,9 @@ h1 {
     width: 600px;
     padding: 15px;
     margin: 15px;
-} 
-.formulario{
+}
+
+.formulario {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: left;
@@ -171,7 +184,7 @@ h1 {
     line-height: 30px;
 }
 
-.form-input{
+.form-input {
     padding: 10px;
     margin: 10px 10px 10px 0;
     width: 90%;
@@ -203,7 +216,7 @@ footer {
     a {
         text-decoration: none;
         color: #143666;
-        position:relative;
+        position: relative;
     }
 
     .logo {
@@ -211,9 +224,11 @@ footer {
         height: 80px;
         margin: 0px;
     }
-.logo:hover{
-    transform: scale(1.1);
-}
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
     .logo img {
         width: 100%;
         height: 100%;
@@ -244,20 +259,26 @@ footer {
     }
 
     .menu {
+        background-color: white;
         width: 100%;
         height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
     }
 
     .redes {
         padding: 10px;
     }
-.redes:hover{
-    transform: scale(1.1);
-}
+
+    .redes:hover {
+        transform: scale(1.1);
+    }
+
     ul {
         list-style: none;
     }
@@ -267,22 +288,24 @@ footer {
         font-size: 20px;
         padding: 15px;
     }
+
     ul li a::after {
         content: "";
         width: 100%;
         height: 2px;
-        background-color:#2E5399;
+        background-color: #2E5399;
         position: absolute;
         left: 0;
         bottom: 0%;
         transform: scale(0);
-        transform-origin: left ;
+        transform-origin: left;
         transition: transform .25s ease;
     }
-    
-    ul li a:hover::after{
+
+    ul li a:hover::after {
         transform: scale(1);
     }
+
     header {
         background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
         height: 500px;
@@ -323,23 +346,25 @@ footer {
         letter-spacing: 1px;
         word-spacing: 3px;
     }
-    .main-container{
+
+    .main-container {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         margin: 50px;
     }
-    .main-img{
+
+    .main-img {
         display: flex;
     }
-    
-    .main-img img{
+
+    .main-img img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         object-position: center center;
     }
-    
+
     .main-form {
         background-color: #80afff5b;
         height: max-content;
@@ -348,16 +373,17 @@ footer {
         width: 600px;
         padding: 15px;
         margin: 15px;
-    } 
-    .formulario{
+    }
+
+    .formulario {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
         text-align: left;
         font-size: 18px;
         line-height: 30px;
     }
-    
-    .form-input{
+
+    .form-input {
         padding: 10px;
         margin: 10px 10px 10px 0;
         width: 90%;
@@ -365,7 +391,7 @@ footer {
         height: 35px;
         border: none;
     }
-    
+
 
     footer {
         width: 100%;
