@@ -24,6 +24,7 @@ a {
     height: 80px;
     margin: 0px;
 }
+
 .logo:hover {
     transform: scale(1.1);
 }
@@ -125,7 +126,7 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction:initial;
+    flex-direction: initial;
     color: #2E5399;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold 90px;

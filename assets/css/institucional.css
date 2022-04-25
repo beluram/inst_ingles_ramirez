@@ -24,6 +24,7 @@ a {
     height: 80px;
     margin: 0px;
 }
+
 .logo:hover {
     transform: scale(1.1);
 }
@@ -103,6 +104,7 @@ ul li a::after {
     transform-origin: left;
     transition: transform .25s ease;
 }
+
 ul li a:hover::after {
     transform: scale(1);
 }
@@ -147,13 +149,14 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "trayectoria"
-                          "mision";
+        "mision";
 }
 
-.trayectoria{
+.trayectoria {
     grid-area: trayectoria;
     height: max-content;
 }
+
 .trayectoriacontenedor {
     grid-area: trayectoria;
     justify-content: space-evenly;
@@ -181,7 +184,7 @@ main {
     align-items: center;
 }
 
-.trayectoriaparrafo{
+.trayectoriaparrafo {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     display: flex;
@@ -214,13 +217,14 @@ main {
     word-spacing: 3px;
 }
 
-.misionparrafo{
+.misionparrafo {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .mision-img {
     height: 400px;
     width: 600px;
@@ -261,6 +265,7 @@ footer {
         margin-top: 0px;
         padding-top: 0px;
     }
+
     .logo:hover {
         transform: scale(1.1);
     }
@@ -301,7 +306,7 @@ footer {
         height: 100px;
         display: flex;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
         font-family: Arial, Helvetica, sans-serif;
         position: sticky;
         top: 0;
@@ -311,6 +316,7 @@ footer {
     .redes {
         padding: 10px;
     }
+
     .redes:hover {
         transform: scale(1.1);
     }
@@ -363,7 +369,7 @@ footer {
 
     h1 {
         text-align: center;
-        margin:auto;
+        margin: auto;
     }
 
     main {
