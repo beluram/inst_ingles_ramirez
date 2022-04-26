@@ -6,7 +6,7 @@
 .contenedor {
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "menu"
         "main"
         "footer"
@@ -14,14 +14,14 @@
 
 a {
     text-decoration: none;
-    color: #2E5399;
+    color: #2E5399 !important;
     position: relative;
 }
 
 .logo {
     width: 80px;
     height: 80px;
-    margin: 0px;
+    margin: 10px;
 }
 
 .logo:hover {
@@ -54,10 +54,7 @@ a {
 .menu {
     grid-area: menu;
     background-color: white;
-    width: 100%;
-    height: 150px;
     display: flex;
-    flex-direction: wrap;
     justify-content: space-between;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
