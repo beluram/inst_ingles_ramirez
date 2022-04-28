@@ -6,14 +6,13 @@
 .contenedor {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 100px;
-    grid-template-areas: "menu "
-        "header"
-        "cursos"
-        "cursos"
-        "footer";
+    grid-template-rows: auto auto auto auto 100px;
+    grid-template-areas: "menu"
+                        "header"
+                        "cursos"
+                        "descripcion"
+                        "footer";
 }
-
 a {
     text-decoration: none;
     color: #143666;
@@ -199,6 +198,22 @@ h3 {
 
 }
 
+.descripcion-cursos{
+    grid-area: descripcion;
+    display: flex;
+    justify-content: center;
+}
+
+h5{
+    font-size: 70px;
+}
+
+.parrafo{
+    color: #143666;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: aliceblue;
+}
 footer {
     grid-area: footer;
     width: 100%;
