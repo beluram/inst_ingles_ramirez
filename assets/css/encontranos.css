@@ -6,7 +6,7 @@
 .contenedor {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto auto 100px;
     grid-template-areas: "menu"
         "header"
         "main"
@@ -16,6 +16,7 @@
 a {
     text-decoration: none;
     color: #143666;
+    position: relative;
 }
 
 .logo {
@@ -54,20 +55,18 @@ a {
 .menu {
     grid-area: menu;
     background-color: white;
-    width: 100%;
-    height: 150px;
     display: flex;
-    flex-direction: wrap;
     justify-content: space-between;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
 }
 
 .redes {
     padding: 10px;
+}
+
+.redes:hover {
+    transform: scale(1.1);
 }
 
 ul {
@@ -105,31 +104,22 @@ ul li a:hover::after {
 
 
 header {
-    grid-area: header;
     background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-    height: 500px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    width: min(100%, calc(100% + 100px));
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: initial;
     color: #2E5399;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold 90px;
-    font-size: 70px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    font-size: clamp (3rem, 3vw, 3rem);
+    margin: auto;
 }
 
 main {
@@ -246,12 +236,12 @@ footer {
 @media(min-width:1200px) {
     .contenedor {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px auto auto 100px;
-        grid-template-areas: "menu   menu"
-            "header header"
-            "main main"
-            "footer footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 100px;
+        grid-template-areas: "menu"
+            "header"
+            "main"
+            "footer";
     }
 
     a {
@@ -301,16 +291,13 @@ footer {
 
     .menu {
         grid-area: menu;
-        background-color: white;
+        background-color: white !important;
         width: 100%;
         height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
-        position: sticky;
-        top: 0;
-        overflow: hidden;
     }
 
     .redes {
@@ -349,31 +336,25 @@ footer {
     }
 
     header {
-        grid-area: header;
         background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-        height: 500px;
+        height: 300px;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         display: flex;
         justify-content: center;
         text-align: center;
-        flex-direction: wrap;
         color: #2E5399;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold 90px;
-        font-size: 70px;
-        letter-spacing: 1px;
-        word-spacing: 3px;
+        font-size: xx-large;
     }
 
     h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 200px;
-        margin-bottom: auto;
-    }
+        margin: auto;
+    }   
 
     .main-container {
         display: flex;
