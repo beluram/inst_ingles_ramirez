@@ -262,8 +262,6 @@ footer {
     .logo {
         width: 80px;
         height: 80px;
-        margin-top: 0px;
-        padding-top: 0px;
     }
 
     .logo:hover {
@@ -275,7 +273,6 @@ footer {
         height: 100%;
         display: flex;
         justify-content: left;
-        align-items: left;
     }
 
     .sizewhatsapp {
@@ -301,16 +298,13 @@ footer {
 
     .menu {
         grid-area: menu;
-        background-color: white;
+        background-color: white !important;
         width: 100%;
         height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
-        position: sticky;
-        top: 0;
-        overflow: hidden;
     }
 
     .redes {
@@ -349,28 +343,25 @@ footer {
     }
 
     header {
-        grid-area: header;
         background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-        height: 500px;
+        height: 300px;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         display: flex;
         justify-content: center;
         text-align: center;
-        flex-direction: wrap;
         color: #2E5399;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold 90px;
-        font-size: 70px;
-        letter-spacing: 1px;
-        word-spacing: 3px;
+        font-size: xx-large;
     }
 
     h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
         text-align: center;
         margin: auto;
-    }
+    } 
 
     main {
         grid-area: main;
@@ -448,7 +439,6 @@ footer {
     img {
         height: 400px;
         width: 600px;
-        padding: 20px;
     }
 
     footer {
