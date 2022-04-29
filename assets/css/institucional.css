@@ -68,8 +68,10 @@ a {
     justify-content: space-between;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
     top: 0;
     overflow: hidden;
+    z-index: 1;
 }
 
 .redes {
@@ -112,39 +114,33 @@ ul li a:hover::after {
 header {
     grid-area: header;
     background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-    height: 500px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    width: min(100%, calc(100% + 70px));
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: initial;
     color: #2E5399;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold 90px;
     font-size: 70px;
     letter-spacing: 1px;
     word-spacing: 3px;
 }
 
 h1 {
+    font-size: 100px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: 25px;
-    font-size: clamp (3rem, 3vw, 3rem);
+    margin: auto;
 }
 
 main {
     grid-area: main;
+    background-color: rgba(138, 138, 148, 0.233);
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
-    margin: 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -154,15 +150,18 @@ main {
 
 .trayectoria {
     grid-area: trayectoria;
-    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .trayectoriacontenedor {
-    grid-area: trayectoria;
-    justify-content: space-evenly;
-    text-align: justify;
-    margin: 15px auto;
+    width: min-content;
+    justify-content: space-between;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 .titulotrayectoria {
@@ -194,13 +193,18 @@ main {
 
 .mision {
     grid-area: mision;
-    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .misionymetascontenedor {
+    width: min-content;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 .titulomision {
@@ -311,6 +315,7 @@ footer {
         position: sticky;
         top: 0;
         overflow: hidden;
+        z-index: 1;
     }
 
     .redes {
@@ -351,7 +356,7 @@ footer {
     header {
         grid-area: header;
         background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-        height: 500px;
+        height: 300px;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -366,6 +371,7 @@ footer {
     }
 
     h1 {
+        font-size: 100px;
         text-align: center;
         margin: auto;
     }
@@ -373,7 +379,6 @@ footer {
     main {
         grid-area: main;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
         display: grid;
@@ -431,21 +436,17 @@ footer {
     }
 
     .titulomision {
-        margin-left: 15px;
-        height: 70px;
-        position: relative;
         display: flex;
-        justify-content: left;
-        flex-direction: wrap;
+        justify-content: center;
+        align-items: center;
         color: #2E5399;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold 90px;
         font-size: 35px;
         letter-spacing: 1px;
         word-spacing: 3px;
     }
 
-    img {
+    .mision-img {
         height: 400px;
         width: 600px;
     }
