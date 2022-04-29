@@ -123,7 +123,6 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    width: min(100%, calc(100% + 100px));
     display: flex;
     justify-content: center;
     text-align: center;
