@@ -72,6 +72,7 @@ a {
     position: sticky;
     top: 0;
     overflow: hidden;
+    z-index: 1;
 }
 
 .redes {
@@ -119,28 +120,24 @@ ul {
 header {
     grid-area: header;
     background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-    height: 500px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: initial;
     color: #2E5399;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold 90px;
     font-size: 70px;
     letter-spacing: 1px;
     word-spacing: 3px;
 }
 
 h1 {
+    font-size: 100px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    font-size: clamp (3rem, 3vw, 3rem);
+    margin: auto;
 }
 
 .cardcontenedor {
@@ -243,7 +240,6 @@ footer {
     .logo {
         width: 80px;
         height: 80px;
-        margin: 0px;
     }
 
     .logo:hover {
@@ -281,6 +277,7 @@ footer {
 
     .menu {
         grid-area: menu;
+        background-color: white;
         width: 100%;
         height: 100px;
         display: flex;
@@ -290,6 +287,7 @@ footer {
         position: sticky;
         top: 0;
         overflow: hidden;
+        z-index: 1;
     }
 
     .redes {
@@ -329,28 +327,23 @@ footer {
 
     header {
         background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-        height: 500px;
+        height: 300px;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         display: flex;
         justify-content: center;
         text-align: center;
-        flex-direction: wrap;
         color: #2E5399;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold 90px;
-        font-size: 70px;
         letter-spacing: 1px;
         word-spacing: 3px;
     }
 
     h1 {
+        font-size: 100px;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 200px;
-        margin-bottom: auto;
+        margin: auto;
     }
 
     .cardcontenedor {
