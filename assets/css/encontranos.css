@@ -64,6 +64,7 @@ a {
     position: sticky;
     top: 0;
     overflow: hidden;
+    z-index: 1;
 }
 
 .redes {
@@ -107,33 +108,30 @@ ul li a:hover::after {
 header {
     grid-area: header;
     background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-    height: 500px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    width: min(100%, calc(100% + 100px));
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: initial;
     color: #2E5399;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold 90px;
     font-size: 70px;
     letter-spacing: 1px;
     word-spacing: 3px;
 }
 
 h1 {
+    font-size: 100px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    font-size: clamp (3rem, 3vw, 3rem);
+    margin: auto;
 }
 
-main {
+.main-container {
     grid-area: main;
+    display: flex;
+    flex-direction: column;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -159,11 +157,14 @@ main {
 
 .mapa {
     grid-area: mapa;
+    display: flex;
+    flex-direction: column;
 }
 
 .direccion {
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: left;
     align-items: baseline;
     font-family: Arial, Helvetica, sans-serif;
@@ -172,17 +173,11 @@ main {
 iframe {
     padding: 15px;
     margin: 35px;
-    display: flex;
-    justify-content: center;
 }
 
 .ubicacion {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    display: flex;
-    justify-content: left;
-    text-align: left;
-    font-size: 18px;
 }
 
 .online-contenedor {
@@ -374,9 +369,9 @@ footer {
         margin-top: 200px;
         margin-bottom: auto;
     }
-
     .main-container {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         margin: 50px;
@@ -400,8 +395,7 @@ footer {
 
     .direccion {
         height: auto;
-        display: flex;
-        justify-content: left;
+        justify-content: center;
         align-items: baseline;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -409,17 +403,11 @@ footer {
     iframe {
         padding: 15px;
         margin: 35px;
-        display: flex;
-        justify-content: center;
     }
 
     .ubicacion {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
-        display: flex;
-        justify-content: left;
-        text-align: left;
-        font-size: 18px;
     }
 
     .online-contenedor {
