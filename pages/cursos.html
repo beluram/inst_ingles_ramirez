@@ -6,7 +6,7 @@
   <title>Instituto Big Ben</title>
   <link rel="shortcut icon" href="../assets/Favicon/favicon-32x32.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/cursos.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -20,7 +20,8 @@
 
     <nav class="navbar navbar-light bg fixed-top">
       <div class="container col-sm-9 bg p-3 justify-content-end">
-        <button class="navbar-toggler position" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler position" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -63,7 +64,7 @@
   <section class="cardcontenedor">
 
     <div data-aos="fade-up-right" class="cardkinder">
-      <h3>Infantil</h3>
+      <h3>Niños</h3>
       <p>
         <ul class="listacursos">
           <li>Kindergarden</li>
@@ -117,6 +118,81 @@
 
   </section>
 
+  <section class="btncursos">
+    <p>
+      <button class="btn-niños col bt_rojo d-flex align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthNiños"
+        aria-expanded="false" aria-controls="collapseWidthNiños">
+        <span>
+          <strong> Niños</strong>
+        </span>
+      </button>
+    </p>
+    <div style="min-height: 120px;">
+      <div class="collapse collapse-horizontal" id="collapseWidthNiños">
+        <div class="card card-body" style="width: 300px;">
+          Los alumnos entran en contacto con el idioma de manera natural, divertida. Incorporarán el inglés a través de
+          juegos, historias y canciones. Comenzarán a conversar y cantar con una pronunciación clara, sin interferir con
+          el aprendizaje de la lectura y escritura en castellano.
+        </div>
+      </div>
+    </div>
+    <p>
+      <button class="btn-adolescentes col bt_rojo d-flex align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthAdolescentes"
+        aria-expanded="false" aria-controls="collapseWidthAdolescentes">
+        <span>
+          <strong> Adolescentes </strong>
+        </span>
+      </button>
+    </p>
+    <div style="min-height: 120px;">
+      <div class="collapse collapse-horizontal" id="collapseWidthAdolescentes">
+        <div class="card card-body" style="width: 300px;">
+          Nuestras clases son dictadas íntegramente en inglés. Desarrollamos las cuatro habilidades del lenguaje: habla,
+          lectura, escritura y comprensión auditiva. Realizamos actividades grupales y proyectos adaptados a los
+          intereses de los alumnos. Incorporamos recursos tecnológicos a las clases para volverlas más interactivas y
+          dinámicas.
+        </div>
+      </div>
+    </div>
+    <p>
+      <button class="btn-adultos col bt_rojo d-flex align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthAdultos"
+        aria-expanded="false" aria-controls="collapseWidthAdultos">
+        <span>
+          <strong> Adultos</strong>
+        </span>
+      </button>
+    </p>
+    <div style="min-height: 120px;">
+      <div class="collapse collapse-horizontal" id="collapseWidthAdultos">
+        <div class="card card-body" style="width: 300px;">
+          Nuestras clases son dictadas íntegramente en inglés. Desarrollamos las cuatro habilidades del lenguaje: habla,
+          lectura, escritura y comprensión auditiva. Realizamos actividades grupales y proyectos adaptados a los
+          intereses de los alumnos y que tienen relación con su realidad personal y laboral. Incorporamos recursos
+          tecnológicos a las clases para volverlas más interactivas y dinámicas.
+        </div>
+      </div>
+    </div>
+    <p>
+      <button class="btn-examenes col bt_rojo d-flex align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExamenes"
+        aria-expanded="false" aria-controls="collapseWidthExamenes">
+        <span>
+          <strong> Examenes Cambridge</strong>
+          Preparate para los examenes
+        </span>
+      </button>
+    </p>
+    <div style="min-height: 120px;">
+      <div class="collapse collapse-horizontal" id="collapseWidthExamenes">
+        <div class="card card-body" style="width: 300px;">
+          Los cursos Cambridge preparan a los alumnos para rendir el examen internacional correspondiente y recibir una certificación internacional de la Universidad de Cambridge reconocida a nivel mundial como indicador de nivel de idioma inglés como lengua extranjera.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
   <footer id="footer">
     <div class="logo">
       <img src="../assets/img/big-ben-vector-illustration_gg81010879.jpg" class="logo" />
@@ -135,7 +211,7 @@
   <script>
     AOS.init();
   </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
 </body>
