@@ -1,99 +1,350 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 100px;
-    grid-template-areas: "menu"
-        "main"
-        "footer"
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto 100px;
+      grid-template-rows: auto auto 100px;
+      grid-template-areas: "menu"
+ "main"
+ "footer";
 }
 
 a {
-    text-decoration: none;
-    color: #2E5399;
-    position: relative;
+  text-decoration: none;
+  color: #2E5399;
+  position: relative;
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .logo:hover {
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .logo img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: left;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 
 .sizewhatsapp {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .sizeinstagram {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .sizefacebook {
-    width: 50px;
-    height: 48px;
+  width: 50px;
+  height: 48px;
 }
 
 .menu {
-    grid-area: menu;
-    background-color: white;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
 }
+
 .offcanvas-title {
-    font-size: 25px;
-    color: #2E5399;
+  font-size: 25px;
+  color: #2E5399;
 }
 
 .redes {
-    padding: 10px;
+  padding: 10px;
 }
 
 .redes:hover {
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 ul {
-    list-style: none;
-    position: relative;
+  list-style: none;
+  position: relative;
 }
 
 ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 20px;
-    letter-spacing: 2px;
-    padding: 0px;
-    margin: 2px;
-    text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 0px;
+  margin: 2px;
+  text-align: center;
 }
 
 ul li a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #2E5399;
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform .25s ease;
+  transition: -webkit-transform .25s ease;
+  transition: transform .25s ease;
+  transition: transform .25s ease, -webkit-transform .25s ease;
+}
+
+ul li a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.principal {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
+  height: 2000px;
+  padding: 15px;
+  margin-top: 15px;
+  color: #2E5399;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold 90px;
+  font-size: 150px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.aprende {
+  font-weight: bold 90px;
+  font-size: 60px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.aprende:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.lema {
+  font-weight: bold 90px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: auto;
+}
+
+button {
+  -webkit-transition: background-color 300ms ease 0ms, border-radius 300ms ease 0ms;
+  transition: background-color 300ms ease 0ms, border-radius 300ms ease 0ms;
+  margin: 20px;
+  padding: 10px;
+  border-width: 15px;
+  border-color: rgba(210, 159, 104, 0);
+  border-radius: 100px;
+  letter-spacing: 0px;
+  font-size: 35px;
+  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  background-color: #fdfcfc;
+}
+
+button a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto 100px;
+        grid-template-rows: auto auto 100px;
+        grid-template-areas: "menu"
+ "main"
+ "footer";
+  }
+  a {
+    text-decoration: none;
+    color: #2E5399;
+    position: relative;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  .logo:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .sizewhatsapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .sizeinstagram {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .sizefacebook {
+    width: 35px;
+    height: 37px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .menu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: menu;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+  .offcanvas-title {
+    font-size: 25px;
+    color: #2E5399;
+  }
+  .redes {
+    padding: 10px;
+  }
+  .redes:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  nav ul {
+    list-style: none;
+  }
+  nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px;
+  }
+  ul li a::after {
     content: "";
     width: 100%;
     height: 2px;
@@ -101,40 +352,38 @@ ul li a::after {
     position: absolute;
     left: 0;
     bottom: 0%;
-    transform: scale(0);
-    transform-origin: left;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: -webkit-transform .25s ease;
+    transition: -webkit-transform .25s ease;
     transition: transform .25s ease;
-}
-
-ul li a:hover::after {
-    transform: scale(1);
-}
-
-.principal {
-    grid-area: main;
+    transition: transform .25s ease, -webkit-transform .25s ease;
+  }
+  .principal {
     background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-    height: 2000px;
-    padding: 15px;
-    margin-top: 15px;
+    height: 1000px;
     color: #2E5399;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
-}
-
-.titulo {
+  }
+  .titulo {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold 90px;
     font-size: 150px;
     letter-spacing: 1px;
     word-spacing: 3px;
-
-}
-
-.aprende {
+  }
+  .aprende {
     font-weight: bold 90px;
     font-size: 60px;
     letter-spacing: 1px;
@@ -143,31 +392,35 @@ ul li a:hover::after {
     text-transform: uppercase;
     color: white;
     text-align: center;
-}
-
-.aprende:hover {
-    transform: scale(1);
-}
-
-.lema {
+  }
+  .lema {
     font-weight: bold 90px;
     font-size: 30px;
     letter-spacing: 1px;
     word-spacing: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-}
-
-h1 {
+  }
+  h1 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 200px;
     margin-bottom: auto;
-}
-
-button {
-    transition: background-color 300ms ease 0ms, border-radius 300ms ease 0ms;
+  }
+  .contactanos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: wrap;
+            flex-direction: wrap;
+  }
+  .boton {
     margin: 20px;
     padding: 10px;
     border-width: 15px;
@@ -178,210 +431,29 @@ button {
     font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
     font-weight: 700;
     background-color: #fdfcfc;
-}
-
-button a:hover::after {
-    transform: scale(1);
-}
-
-footer {
-    grid-area: footer;
+  }
+  .boton {
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+  }
+  .boton:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: #c8e4e7d2;
+  }
+  footer {
     width: 100%;
     height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+  }
 }
-
-@media(min-width:1200px) {
-    .contenedor {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 100px;
-        grid-template-areas: "menu"
-            "main"
-            "footer"
-    }
-
-    a {
-        text-decoration: none;
-        color: #2E5399;
-        position: relative;
-    }
-
-    .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .logo:hover {
-        transform: scale(1.1);
-    }
-
-    .logo img {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: left;
-        align-items: left;
-    }
-
-    .sizewhatsapp {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .sizeinstagram {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .sizefacebook {
-        width: 35px;
-        height: 37px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .menu {
-        grid-area: menu;
-        background-color: white;
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-        position: sticky;
-        top: 0;
-        overflow: hidden;
-    }
-
-    .offcanvas-title {
-        font-size: 25px;
-        color: #2E5399;
-    }
-
-    .redes {
-        padding: 10px;
-    }
-
-    .redes:hover {
-        transform: scale(1.1);
-    }
-
-    nav ul {
-        list-style: none;
-    }
-
-    nav ul li {
-        display: inline-block;
-        font-size: 20px;
-        padding: 15px;
-    }
-
-    ul li a::after {
-        content: "";
-        width: 100%;
-        height: 2px;
-        background-color: #2E5399;
-        position: absolute;
-        left: 0;
-        bottom: 0%;
-        transform: scale(0);
-        transform-origin: left;
-        transition: transform .25s ease;
-    }
-
-    .principal {
-        background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-        height: 1000px;
-        color: #2E5399;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-
-    }
-
-    .titulo {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold 90px;
-        font-size: 150px;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-
-    }
-
-    .aprende {
-        font-weight: bold 90px;
-        font-size: 60px;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-        font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
-        text-transform: uppercase;
-        color: white;
-        text-align: center;
-    }
-
-    .lema {
-        font-weight: bold 90px;
-        font-size: 30px;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-    }
-
-    h1 {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 200px;
-        margin-bottom: auto;
-    }
-
-    .contactanos {
-        display: flex;
-        justify-content: center;
-        flex-direction: wrap;
-    }
-
-    .boton {
-        margin: 20px;
-        padding: 10px;
-        border-width: 15px;
-        border-color: rgba(210, 159, 104, 0);
-        border-radius: 100px;
-        letter-spacing: 0px;
-        font-size: 35px;
-        font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
-        font-weight: 700;
-        background-color: #fdfcfc;
-    }
-
-    .boton {
-        transition-duration: 0.4s;
-    }
-
-    .boton:hover {
-        transform: scale(1.1);
-        background-color: #c8e4e7d2;
-    }
-
-    footer {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-}
+/*# sourceMappingURL=style.css.map */
