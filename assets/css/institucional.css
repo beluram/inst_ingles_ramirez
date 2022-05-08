@@ -6,7 +6,7 @@
 .contenedor {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto auto 100px;
+    grid-template-rows: auto auto auto 100px;
     grid-template-areas: "menu"
         "header"
         "main "
@@ -38,32 +38,11 @@ a {
     align-items: left;
 }
 
-.sizewhatsapp {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.sizeinstagram {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.sizefacebook {
-    width: 35px;
-    height: 37px;
-    padding: 5px;
-    margin: 5px;
-}
-
 .menu {
     background-color: white;
     grid-area: menu;
     width: 100%;
-    height: 100px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,38 +57,6 @@ a {
     padding: 10px;
 }
 
-ul {
-    list-style: none;
-    position: relative;
-}
-
-ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 20px;
-    letter-spacing: 2px;
-    padding: 0px;
-    margin: 2px;
-    text-align: center;
-}
-
-ul li a::after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #2E5399;
-    position: absolute;
-    left: 0;
-    bottom: 0%;
-    transform: scale(0);
-    transform-origin: left;
-    transition: transform .25s ease;
-}
-
-ul li a:hover::after {
-    transform: scale(1);
-}
 
 header {
     grid-area: header;
@@ -235,7 +182,35 @@ main {
     padding: 20px;
     border-radius: 5px;
 }
+.sizewhatsapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+.sizewhatsapp:hover {
+    transform: scale(1.1);
+}
 
+.sizeinstagram {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+.sizeinstagram:hover {
+    transform: scale(1.1);
+}
+
+.sizefacebook {
+    width: 35px;
+    height: 37px;
+    padding: 5px;
+    margin: 5px;
+} 
+.sizefacebook:hover {
+    transform: scale(1.1);
+}
 footer {
     grid-area: footer;
     width: 100%;
@@ -311,7 +286,7 @@ footer {
         background-color: white;
         grid-area: menu;
         width: 100%;
-        height: 100px;
+        height: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -319,7 +294,6 @@ footer {
         position: sticky;
         top: 0;
         overflow: hidden;
-        z-index: 1;
     }
 
     .redes {
@@ -483,6 +457,27 @@ footer {
         padding: 20px;
         border-radius: 5px;
     }
+    .sizewhatsapp {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    
+    .sizeinstagram {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .sizefacebook {
+        width: 35px;
+        height: 37px;
+        padding: 5px;
+        margin: 5px;
+    }
 
     footer {
         grid-area: footer;
@@ -529,27 +524,6 @@ footer {
         align-items: left;
     }
 
-    .sizewhatsapp {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .sizeinstagram {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .sizefacebook {
-        width: 35px;
-        height: 37px;
-        padding: 5px;
-        margin: 5px;
-    }
-
     .menu {
         grid-area: menu;
         background-color: white;
@@ -572,7 +546,16 @@ footer {
     .redes:hover {
         transform: scale(1.1);
     }
+    .navbar-nav{
+        list-style: none;
+        position: relative;
+        font-size: 20px;
+    }
 
+    .nav-link{
+        margin: 20px;
+        color: #2E5399 !important;
+    }
     ul {
         list-style: none;
     }
@@ -694,7 +677,35 @@ footer {
         width: 550px;
         margin: auto;
     }
+    .sizewhatsapp {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .sizewhatsapp:hover {
+        transform: scale(1.1);
+    }
 
+    .sizeinstagram {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .sizeinstagram:hover {
+        transform: scale(1.1);
+    }
+
+    .sizefacebook {
+        width: 35px;
+        height: 37px;
+        padding: 5px;
+        margin: 5px;
+    } 
+    .sizefacebook:hover {
+        transform: scale(1.1);
+    }
     footer {
         grid-area: footer;
         width: 100%;
