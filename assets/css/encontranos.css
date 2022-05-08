@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -239,6 +239,10 @@ footer {
 }
 
 @media(min-width:1200px) {
+*{
+    margin:0px;
+    padding: 0px;
+}
     .contenedor {
         display: grid;
         grid-template-columns: 1fr 1fr;
