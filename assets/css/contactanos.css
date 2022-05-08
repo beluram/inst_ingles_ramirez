@@ -37,27 +37,6 @@ a {
     align-items: left;
 }
 
-.sizewhatsapp {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.sizeinstagram {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.sizefacebook {
-    width: 35px;
-    height: 37px;
-    padding: 5px;
-    margin: 5px;
-}
-
 .menu {
     grid-area: menu;
     background-color: white;
@@ -201,6 +180,41 @@ h1 {
     border: none;
 }
 
+.sizewhatsapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizewhatsapp:hover {
+    transform: scale(1.1);
+}
+
+
+.sizeinstagram {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizeinstagram:hover {
+    transform: scale(1.1);
+}
+
+
+.sizefacebook {
+    width: 35px;
+    height: 37px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizefacebook:hover {
+    transform: scale(1.1);
+}
+
 footer {
     width: 100%;
     height: 100px;
@@ -245,27 +259,6 @@ footer {
         align-items: left;
     }
 
-    .sizewhatsapp {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .sizeinstagram {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .sizefacebook {
-        width: 35px;
-        height: 37px;
-        padding: 5px;
-        margin: 5px;
-    }
-
     .menu {
         grid-area: menu;
         background-color: white;
@@ -287,6 +280,17 @@ footer {
 
     .redes:hover {
         transform: scale(1.1);
+    }
+
+    .navbar-nav {
+        list-style: none;
+        position: relative;
+        font-size: 20px;
+    }
+
+    .nav-link {
+        margin: 20px;
+        color: #2E5399 !important;
     }
 
     ul {
@@ -402,6 +406,40 @@ footer {
         border: none;
     }
 
+    .sizewhatsapp {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizewhatsapp:hover {
+        transform: scale(1.1);
+    }
+
+
+    .sizeinstagram {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizeinstagram:hover {
+        transform: scale(1.1);
+    }
+
+
+    .sizefacebook {
+        width: 35px;
+        height: 37px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizefacebook:hover {
+        transform: scale(1.1);
+    }
 
     footer {
         width: 100%;

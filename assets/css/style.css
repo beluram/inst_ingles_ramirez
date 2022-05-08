@@ -205,21 +205,22 @@ footer {
         overflow: hidden;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         list-style: none;
         position: relative;
         font-size: 20px;
     }
 
-    .nav-link{
+    .nav-link {
         margin: 20px;
         color: #2E5399 !important;
     }
+
     ul {
         list-style: none;
         position: relative;
     }
-    
+
     ul li {
         display: flex;
         flex-direction: column;
@@ -230,7 +231,7 @@ footer {
         margin: 2px;
         text-align: center;
     }
-    
+
     ul li a::after {
         content: "";
         width: 100%;
@@ -243,10 +244,11 @@ footer {
         transform-origin: left;
         transition: transform .25s ease;
     }
-    
+
     ul li a:hover::after {
         transform: scale(1);
     }
+
     .redes {
         padding: 10px;
     }
@@ -329,12 +331,14 @@ footer {
         transform: scale(1.1);
         background-color: #c8e4e7d2;
     }
+
     .sizewhatsapp {
         width: 40px;
         height: 40px;
         padding: 5px;
         margin: 5px;
     }
+
     .sizewhatsapp:hover {
         transform: scale(1.1);
     }
@@ -346,6 +350,7 @@ footer {
         padding: 5px;
         margin: 5px;
     }
+
     .sizeinstagram:hover {
         transform: scale(1.1);
     }
@@ -357,6 +362,7 @@ footer {
         padding: 5px;
         margin: 5px;
     }
+
     .sizefacebook:hover {
         transform: scale(1.1);
     }

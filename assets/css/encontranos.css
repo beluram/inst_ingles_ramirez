@@ -171,12 +171,14 @@ iframe {
     align-items: center;
     justify-content: center;
 }
+
 .sizewhatsapp {
     width: 40px;
     height: 40px;
     padding: 5px;
     margin: 5px;
 }
+
 .sizewhatsapp:hover {
     transform: scale(1.1);
 }
@@ -187,6 +189,7 @@ iframe {
     padding: 5px;
     margin: 5px;
 }
+
 .sizeinstagram:hover {
     transform: scale(1.1);
 }
@@ -196,10 +199,12 @@ iframe {
     height: 37px;
     padding: 5px;
     margin: 5px;
-} 
+}
+
 .sizefacebook:hover {
     transform: scale(1.1);
 }
+
 footer {
     grid-area: footer;
     width: 100%;
@@ -211,10 +216,11 @@ footer {
 }
 
 @media(min-width:1200px) {
-*{
-    margin:0px;
-    padding: 0px;
-}
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .contenedor {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -271,21 +277,22 @@ footer {
         transform: scale(1.1);
     }
 
-    .navbar-nav{
+    .navbar-nav {
         list-style: none;
         position: relative;
         font-size: 20px;
     }
 
-    .nav-link{
+    .nav-link {
         margin: 20px;
         color: #2E5399 !important;
     }
+
     ul {
         list-style: none;
         position: relative;
     }
-    
+
     ul li {
         display: flex;
         flex-direction: column;
@@ -296,7 +303,7 @@ footer {
         margin: 2px;
         text-align: center;
     }
-    
+
     ul li a::after {
         content: "";
         width: 100%;
@@ -309,10 +316,11 @@ footer {
         transform-origin: left;
         transition: transform .25s ease;
     }
-    
+
     ul li a:hover::after {
         transform: scale(1);
     }
+
     header {
         grid-area: header;
         background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
@@ -339,6 +347,7 @@ footer {
         margin-top: 200px;
         margin-bottom: auto;
     }
+
     .main-container {
         display: flex;
         flex-direction: row;
@@ -427,12 +436,14 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
     .sizewhatsapp {
         width: 40px;
         height: 40px;
         padding: 5px;
         margin: 5px;
     }
+
     .sizewhatsapp:hover {
         transform: scale(1.1);
     }
@@ -444,6 +455,7 @@ footer {
         padding: 5px;
         margin: 5px;
     }
+
     .sizeinstagram:hover {
         transform: scale(1.1);
     }
@@ -455,9 +467,11 @@ footer {
         padding: 5px;
         margin: 5px;
     }
+
     .sizefacebook:hover {
         transform: scale(1.1);
     }
+
     footer {
         grid-area: footer;
         width: 100%;
