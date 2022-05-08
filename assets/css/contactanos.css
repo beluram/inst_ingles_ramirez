@@ -173,6 +173,7 @@ h1 {
 }
 
 .main-form {
+    width: 100%;
     background-color: #80afff5b;
     height: max-content;
     box-shadow: 5px 10px 5px gray;
@@ -183,6 +184,7 @@ h1 {
 }
 
 .formulario {
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: left;
@@ -193,9 +195,9 @@ h1 {
 .form-input {
     padding: 10px;
     margin: 10px 10px 10px 0;
-    width: 90%;
+    width: 100%;
     border-radius: 4px;
-    height: 35px;
+    height: 38px;
     border: none;
 }
 
@@ -396,7 +398,7 @@ footer {
         margin: 10px 10px 10px 0;
         width: 90%;
         border-radius: 4px;
-        height: 35px;
+        height: 38px;
         border: none;
     }
 
