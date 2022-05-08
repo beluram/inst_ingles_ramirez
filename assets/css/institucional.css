@@ -678,6 +678,7 @@ footer {
     }
 
     .titulomision {
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -691,6 +692,7 @@ footer {
     .mision-img {
         height: 350px;
         width: 550px;
+        margin: auto;
     }
 
     footer {
