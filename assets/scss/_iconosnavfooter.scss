@@ -7,16 +7,14 @@
 }
 
 .sizeinstagram {
-    width: 50px;
-    height: 50px;
+    @extend .sizewhatsapp;
 }
 .sizeinstagram:hover {
     transform: scale(1.1);
 }
 
 .sizefacebook {
-    width: 50px;
-    height: 48px;
+    @extend .sizewhatsapp;
 }
 .sizefacebook:hover {
     transform: scale(1.1);
@@ -28,9 +26,7 @@
 
 
 .logo {
-    width: 80px;
-    height: 80px;
-    margin: 3px;
+    size: map-get($logo , size );
 
     .logo:hover {
         transform: scale(1.1);

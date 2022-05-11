@@ -1,0 +1,12 @@
+@mixin propiedadesBoton ($bg-color, $margin, $padding, $border-width, $border-color, $border-radius, $letterspacing, $font-size, $font-family, $font-weight){
+    background-color: $bg-color;
+    margin: $margin;
+    padding: $padding;
+    border-width: $border-width;
+    border-color: $border-color;
+    letter-spacing: $letter-spacing;
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $font-weight;
+
+}

@@ -1,0 +1,13 @@
+   
+.boton {
+    @include propiedadesBoton (#fdfcfc, 20px, 10px, 15px, rgba(210, 159, 104, 0), 100px, 0px, 35px, 'Rubik', Helvetica, Arial, Lucida, sans-serif, 700 );
+
+    .boton {
+        transition-duration: 0.4s;
+
+        .boton:hover {
+            transform: scale(1.1);
+            background-color: #c8e4e7d2;
+        }
+    }
+}
