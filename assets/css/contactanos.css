@@ -37,27 +37,6 @@ a {
     align-items: left;
 }
 
-.sizewhatsapp {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.sizeinstagram {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.sizefacebook {
-    width: 35px;
-    height: 37px;
-    padding: 5px;
-    margin: 5px;
-}
-
 .menu {
     grid-area: menu;
     background-color: white;
@@ -173,6 +152,7 @@ h1 {
 }
 
 .main-form {
+    width: 100%;
     background-color: #80afff5b;
     height: max-content;
     box-shadow: 5px 10px 5px gray;
@@ -183,6 +163,7 @@ h1 {
 }
 
 .formulario {
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: left;
@@ -193,10 +174,45 @@ h1 {
 .form-input {
     padding: 10px;
     margin: 10px 10px 10px 0;
-    width: 90%;
+    width: 100%;
     border-radius: 4px;
-    height: 35px;
+    height: 38px;
     border: none;
+}
+
+.sizewhatsapp {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizewhatsapp:hover {
+    transform: scale(1.1);
+}
+
+
+.sizeinstagram {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizeinstagram:hover {
+    transform: scale(1.1);
+}
+
+
+.sizefacebook {
+    width: 35px;
+    height: 37px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sizefacebook:hover {
+    transform: scale(1.1);
 }
 
 footer {
@@ -243,27 +259,6 @@ footer {
         align-items: left;
     }
 
-    .sizewhatsapp {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .sizeinstagram {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .sizefacebook {
-        width: 35px;
-        height: 37px;
-        padding: 5px;
-        margin: 5px;
-    }
-
     .menu {
         grid-area: menu;
         background-color: white;
@@ -285,6 +280,17 @@ footer {
 
     .redes:hover {
         transform: scale(1.1);
+    }
+
+    .navbar-nav {
+        list-style: none;
+        position: relative;
+        font-size: 20px;
+    }
+
+    .nav-link {
+        margin: 20px;
+        color: #2E5399 !important;
     }
 
     ul {
@@ -396,10 +402,44 @@ footer {
         margin: 10px 10px 10px 0;
         width: 90%;
         border-radius: 4px;
-        height: 35px;
+        height: 38px;
         border: none;
     }
 
+    .sizewhatsapp {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizewhatsapp:hover {
+        transform: scale(1.1);
+    }
+
+
+    .sizeinstagram {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizeinstagram:hover {
+        transform: scale(1.1);
+    }
+
+
+    .sizefacebook {
+        width: 35px;
+        height: 37px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .sizefacebook:hover {
+        transform: scale(1.1);
+    }
 
     footer {
         width: 100%;

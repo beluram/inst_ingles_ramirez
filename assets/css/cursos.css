@@ -64,7 +64,7 @@ a {
     background-color: white;
     grid-area: menu;
     width: 100%;
-    height: 130px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,30 +139,32 @@ h1 {
     text-align: center;
     margin: auto;
 }
-.btncursos{
+
+.btncursos {
     grid-area: descripcion;
     display: flex;
     flex-direction: column;
-    justify-content:stretch;
+    justify-content: stretch;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "niños"
-                         "adolescentes"
-                         "adultos"
-                         "examenes";
+        "adolescentes"
+        "adultos"
+        "examenes";
 
 }
-.btn-niños{
+
+.btn-niños {
     grid-area: niños;
-    color:#143666;
+    color: #143666;
     display: flex;
-    justify-content:stretch;
+    justify-content: stretch;
     align-items: center;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/panel_camb_young_learners.jpg);
+    background-image: url(../img/kids.jpg);
     width: 300px;
     height: 280px;
     margin: 20px;
@@ -174,12 +176,13 @@ h1 {
 .btn-niños:hover {
     transform: scale(1.1);
 }
-.btn-adolescentes{
-    grid-area:adolescentes ;
-    color:#143666;
+
+.btn-adolescentes {
+    grid-area: adolescentes;
+    color: #143666;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/panel_adolescentes.jpg);
+    background-image: url(../img/adolescentes.jpg);
     width: 300px;
     height: 280px;
     margin: 20px;
@@ -191,12 +194,13 @@ h1 {
 .btn-adolescentes:hover {
     transform: scale(1.1);
 }
-.btn-adultos{
+
+.btn-adultos {
     grid-area: adultos;
-    color:#143666;
+    color: #143666;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/panel_adultos.jpg);
+    background-image: url(../img/adultos.jpg);
     width: 300px;
     height: 280px;
     margin: 20px;
@@ -208,12 +212,13 @@ h1 {
 .btn-adultos:hover {
     transform: scale(1.1);
 }
-.btn-examenes{
+
+.btn-examenes {
     grid-area: examenes;
-    color:#143666;
+    color: #143666;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/panel-cursos-cambridge-edited.jpg);
+    background-image: url(../img/examenes.jpg);
     width: 300px;
     height: 280px;
     margin: 20px;
@@ -225,6 +230,7 @@ h1 {
 .btn-examenes:hover {
     transform: scale(1.1);
 }
+
 .cardcontenedor {
     grid-area: cursos;
     display: flex;
@@ -304,7 +310,7 @@ footer {
     .contenedor {
         display: grid;
         grid-template-columns: 1;
-        grid-template-rows: auto  auto auto auto 100px;
+        grid-template-rows: auto auto auto auto 100px;
         grid-template-areas: "menu"
             "header"
             "descripcion"
@@ -384,6 +390,11 @@ footer {
         list-style: none;
     }
 
+    .nav-link {
+        margin: 20px;
+        color: #2E5399 !important;
+    }
+
     .menu li {
         display: inline-block;
         font-size: 20px;
@@ -428,15 +439,16 @@ footer {
         margin: auto;
     }
 
-    .btncursos{
+    .btncursos {
         grid-area: descripcion;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
     }
-    .btn-niños{
-        color:#143666;
+
+    .btn-niños {
+        color: #143666;
         font-size: 25px;
         font-family: Arial, Helvetica, sans-serif;
         background-image: url(../img/panel_camb_young_learners.jpg);
@@ -451,8 +463,9 @@ footer {
     .btn-niños:hover {
         transform: scale(1.1);
     }
-    .btn-adolescentes{
-        color:#143666;
+
+    .btn-adolescentes {
+        color: #143666;
         font-size: 25px;
         font-family: Arial, Helvetica, sans-serif;
         background-image: url(../img/panel_adolescentes.jpg);
@@ -467,8 +480,9 @@ footer {
     .btn-adolescentes:hover {
         transform: scale(1.1);
     }
-    .btn-adultos{
-        color:#143666;
+
+    .btn-adultos {
+        color: #143666;
         font-size: 25px;
         font-family: Arial, Helvetica, sans-serif;
         background-image: url(../img/panel_adultos.jpg);
@@ -483,8 +497,9 @@ footer {
     .btn-adultos:hover {
         transform: scale(1.1);
     }
-    .btn-examenes{
-        color:#143666;
+
+    .btn-examenes {
+        color: #143666;
         font-size: 25px;
         font-family: Arial, Helvetica, sans-serif;
         background-image: url(../img/panel-cursos-cambridge-edited.jpg);
@@ -563,7 +578,7 @@ footer {
     .listacursos:hover {
         transform: scale(1.1);
     }
-    
+
 
     footer {
         grid-area: footer;
