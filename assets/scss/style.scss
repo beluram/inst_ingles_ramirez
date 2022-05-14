@@ -3,13 +3,13 @@
     padding: 0;
 }
 
-@import "iconosnavfooter";
-@import "menu";
-@import "variables";
-@import "mixins";
-@import "button";
-@import "maincontent";
-@import "_footer";
+@import "./incommon/iconosnavfooter";
+@import "./incommon/menu";
+@import "./incommon/variables";
+@import "./incommon/mixins";
+@import "./sections-index/button";
+@import "./sections-index/maincontent";
+@import "./incommon/footer";
 
 
 

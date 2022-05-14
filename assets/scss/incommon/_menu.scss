@@ -1,15 +1,19 @@
+a {
+    text-decoration: none;
+    color: #143666;
+    position: relative;
+}
+
 .navbar-nav {
     list-style: none;
     position: relative;
     font-size: 20px;
 
-    .nav-link {
+    .nav-item {
         margin: 20px;
         color: #2E5399 !important;
     }
 }
-
-
 
 ul {
     list-style: none;
@@ -21,7 +25,7 @@ ul {
         justify-content: center;
         font-size: 20px;
         letter-spacing: 2px;
-        padding: 0px;
+        padding: 10px;
         margin: 2px;
         text-align: center;
 

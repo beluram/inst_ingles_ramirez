@@ -24,9 +24,11 @@
     padding: 10px;
 }
 
-
 .logo {
-    size: map-get($logo , size );
+    width: map-get($logo , width );
+    height: map-get($logo , height );
+    margin: map-get($logo , margin );
+
 
     .logo:hover {
         transform: scale(1.1);
