@@ -3,6 +3,45 @@
     padding: 0;
 }
 
+@include media-up (sm) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 100px;
+        grid-template-areas: "menu"
+            "header"
+            "main "
+            "footer";
+    }
+}
+
+@include media-up (md) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-areas: "menu"
+            "header"
+            "main "
+            "footer";
+    }
+}
+
+@include media-up (lg) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-areas: "menu"
+            "header"
+            "main "
+            "footer";
+    }
+}
+
+
+
+
 @import "./breakpoints/breakpointsindex";
 @import "./incommon/iconosnavfooter";
 @import "./incommon/menu";

@@ -12,6 +12,14 @@ a {
         "main"
         "footer"
 }
+.main-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .principal {
     grid-area: main;
