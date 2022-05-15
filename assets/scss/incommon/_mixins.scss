@@ -1,4 +1,4 @@
-@mixin propiedadesBoton ($bg-color, $margin, $padding, $border-width, $border-color, $border-radius, $letterspacing, $font-size, $font-family, $font-weight){
+@mixin propiedadesBoton ($bg-color, $margin, $padding, $border-width, $border-color, $border-radius, $letterspacing, $font-size, $font-family, $font-weight) {
     background-color: $bg-color;
     margin: $margin;
     padding: $padding;
@@ -8,5 +8,24 @@
     font-size: $font-size;
     font-family: $font-family;
     font-weight: $font-weight;
+}
 
+@mixin propiedadesbtncursos ($color, $display, $justify-content, $align-items, $font-size, $font-family, $width, $height, $margin, $padding, $border-radius, $box-shadow) {
+    color: $color;
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    font-size: $align-items;
+    font-family: $font-family;
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+@mixin cardscursos ($justify-content, $align-items) {
+    justify-content: $justify-content;
+    align-items: $align-items;
 }

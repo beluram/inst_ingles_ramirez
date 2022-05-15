@@ -1,0 +1,25 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto 100px;
+        grid-template-areas: "menu "
+            "header"
+            "descripcion"
+            "cursos"
+            "footer";
+    }
+
+@import "./breakpoints/breakpointsindex";
+@import "./incommon/iconosnavfooter";
+@import "./incommon/menu";
+@import "./incommon/header";
+@import "./sections-cursos/btncursos";
+@import "./sections-cursos/cardscursos";
+@import "./sections-cursos/listcursos";
+@import "./incommon/mixins";
+@import "./incommon/variables";
+@import "./incommon/footer";
