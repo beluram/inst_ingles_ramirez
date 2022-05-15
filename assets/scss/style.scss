@@ -3,8 +3,20 @@
     padding: 0;
 }
 
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 100px;
+    grid-template-areas: "menu"
+        "main"
+        "footer"
+}
+
+@import "./breakpoints/breakpointsindex";
 @import "./incommon/iconosnavfooter";
 @import "./incommon/menu";
+@import "./incommon/header";
 @import "./incommon/variables";
 @import "./incommon/mixins";
 @import "./sections-index/button";

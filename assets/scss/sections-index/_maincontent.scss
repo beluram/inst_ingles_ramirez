@@ -4,6 +4,14 @@ a {
     position: relative;
 }
 
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 100px;
+    grid-template-areas: "menu"
+        "main"
+        "footer"
+}
 
 .principal {
     grid-area: main;
@@ -16,20 +24,16 @@ a {
     background-position: center;
     background-attachment: fixed;
     display: flex;
-    flex-direction: wrap;
     justify-content: center;
     text-align: center;
-    flex-direction: wrap;
 
     .titulo {
         font-family: $font-family;
-        font-weight: bold 90px;
         font-size: 150px;
         letter-spacing: 1px;
         word-spacing: 3px;
 
         .aprende {
-            font-weight: bold 90px;
             font-size: 60px;
             letter-spacing: 1px;
             word-spacing: 3px;
@@ -47,17 +51,31 @@ a {
                     letter-spacing: 1px;
                     word-spacing: 3px;
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    color: white;
+                    color: $colorSecundario;
 
-                    h1 {
-                        text-align: center;
-                        margin: map-get($h1 , margin );
-                    }
                 }
             }
 
         }
 
+    }
+}
 
+@include media-up (sm) {
+    h1 {
+        text-align: center;
+    }
+}
+
+@include media-up (md) {
+    h1 {
+        text-align: center;
+    }
+}
+
+@include media-up (lg) {
+    h1 {
+        text-align: center;
+        margin: map-get($h1-lg, margin-top)
     }
 }

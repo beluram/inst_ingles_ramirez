@@ -1,0 +1,23 @@
+
+header {
+    grid-area: header;
+    background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    margin: auto;
+}
