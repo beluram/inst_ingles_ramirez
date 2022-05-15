@@ -1,13 +1,11 @@
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
 @import "./breakpoints/breakpointsindex";
 @import "./incommon/iconosnavfooter";
 @import "./incommon/menu";
-@import "./sections-institucional/grid";
-@import "./sections-institucional/main-institucional";
 @import "./incommon/mixins";
 @import "./incommon/variables";
 @import "./incommon/footer";
