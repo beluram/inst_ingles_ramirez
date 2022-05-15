@@ -1,0 +1,57 @@
+.btncursos {
+    grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "niños"
+        "adolescentes"
+        "adultos"
+        "examenes";
+
+}
+
+.btn-niños {
+    @include propiedadesbtncursos ($colorTerciario, flex, stretch, center, 25px, $font-family1, 300px, 280px, 20px, 5px, 10px, $colorPrimario);
+    grid-area: niños;
+    background-image: url(../img/kids.jpg);
+}
+
+.btn-niños:hover {
+    transform: scale(1.1);
+}
+
+.btn-adolescentes {
+    @include propiedadesbtncursos ($colorTerciario, flex, stretch, center, 25px, $font-family1, 300px, 280px, 20px, 5px, 10px, $colorPrimario);
+    grid-area: adolescentes;
+    background-image: url(../img/adolescentes.jpg);
+}
+
+.btn-adolescentes:hover {
+    transform: scale(1.1);
+}
+
+.btn-adultos {
+    @include propiedadesbtncursos ($colorTerciario, flex, stretch, center, 25px, $font-family1, 300px, 280px, 20px, 5px, 10px, $colorPrimario);
+    grid-area: adultos;
+    background-image: url(../img/adultos.jpg);
+
+}
+
+.btn-adultos:hover {
+    transform: scale(1.1);
+}
+
+.btn-examenes {
+    @include propiedadesbtncursos ($colorTerciario, flex, stretch, center, 25px, $font-family1, 300px, 280px, 20px, 5px, 10px, $colorPrimario);
+    grid-area: examenes;
+    background-image: url(../img/examenes.jpg);
+
+}
+
+.btn-examenes:hover {
+    transform: scale(1.1);
+}
