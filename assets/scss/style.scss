@@ -12,13 +12,12 @@
         "main"
         "footer"
 }
-
+@import "./incommon/mixins";
+@import "./incommon/variables";
 @import "./breakpoints/breakpointsindex";
 @import "./incommon/iconosnavfooter";
 @import "./incommon/menu";
 @import "./incommon/header";
-@import "./incommon/variables";
-@import "./incommon/mixins";
 @import "./sections-index/button";
 @import "./sections-index/maincontent";
 @import "./incommon/footer";
