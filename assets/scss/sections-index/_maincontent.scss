@@ -23,7 +23,7 @@ a {
 
 .principal_index {
     grid-area: main;
-    background-image: url(assets\img\maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
+    background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
     height: 1000px;
     padding: 15px;
     margin-top: 15px;
@@ -36,7 +36,7 @@ a {
     text-align: center;
 
     .titulo_index {
-        font-family: $font-family;
+        font-family: $font-family1;
         font-size: 150px;
         letter-spacing: 1px;
         word-spacing: 3px;
@@ -78,12 +78,16 @@ a {
 @include media-up (md) {
     h1 {
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        margin-bottom: auto;
     }
 }
 
 @include media-up (lg) {
     h1 {
         text-align: center;
-        margin: map-get($h1-lg, margin-top)
+        
     }
 }

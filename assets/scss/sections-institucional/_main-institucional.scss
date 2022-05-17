@@ -1,4 +1,4 @@
-.contenedor_institucional {
+.maincontainer_encontranos {
     grid-area: main;
     background-color: rgba(138, 138, 148, 0.233);
     display: flex;
@@ -24,7 +24,7 @@
     width: min-content;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-family1;
     text-align: justify;
 }
 
@@ -34,17 +34,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    color: #2E5399;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold 90px;
+    color: $colorPrimario;
+    font-family: $font-family1;
     font-size: 15px;
     letter-spacing: 1px;
     word-spacing: 3px;
-}
-
-.trayectoriacontenedor {
-    justify-content: space-between;
-    align-items: center;
 }
 
 .trayectoriaparrafo {
@@ -57,90 +51,81 @@
 
 .mision {
     grid-area: mision;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .trayectoria;
 }
 
 .misionymetascontenedor {
-    width: min-content;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+    @extend .trayectoriacontenedor;
 }
 
 .titulomision {
-    margin-left: 15px;
-    height: 35px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    color: #2E5399;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold 90px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
+    @extend .titulotrayectoria;
+
+    .misionparrafo {
+        @extend .trayectoriaparrafo;
+    }
+
+    .mision-img {
+        height: 150px;
+        width: 300px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    @include media-up (md) {
+        .titulotrayectoria {
+            margin-left: 15px;
+            height: 70px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            color: $colorPrimario;
+            font-family: $font-family1;
+            font-size: 35px;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+        }
+
+        .titulomision {
+            margin-left: 15px;
+            height: 70px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            color: $colorPrimario;
+            font-family: $font-family1;
+            font-size: 35px;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+        }
+
+    }
 }
 
-.misionparrafo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@include media-up (lg) {
+    .titulotrayectoria {
+        margin-left: 15px;
+        height: 70px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: $colorPrimario;
+        font-family: $font-family1;
+        font-size: 35px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
 
-.mision-img {
-    height: 150px;
-    width: 300px;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-
-@include media-up (md) {
     .titulomision {
         margin-left: 15px;
         height: 70px;
         position: relative;
         display: flex;
         justify-content: center;
-        color: #2E5399;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold 90px;
+        color: $colorPrimario;
+        font-family: $font-family1;
         font-size: 35px;
         letter-spacing: 1px;
-        word-spacing: 3px;
-    }
-    
-    .mision-img {
-        height: 400px;
-        width: 600px;
-        padding: 20px;
-        border-radius: 5px;
-    }
-}
-
-@include media-up (lg) {
- 
-    .titulomision {
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #2E5399;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 35px;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-    }
-
-    .mision-img {
-        height: 350px;
-        width: 550px;
-        margin: auto;
+        word-spacing: 3px;;
     }
 }

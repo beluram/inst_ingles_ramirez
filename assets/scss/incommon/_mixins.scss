@@ -1,4 +1,4 @@
-@mixin propiedadesBoton ($bg-color, $margin, $padding, $border-width, $border-color, $border-radius, $letterspacing, $font-size, $font-family, $font-weight) {
+@mixin propiedadesBotonIndex ($bg-color, $margin, $padding, $border-width, $border-color, $border-radius, $letter-spacing, $font-size) {
     background-color: $bg-color;
     margin: $margin;
     padding: $padding;
@@ -6,8 +6,6 @@
     border-color: $border-color;
     letter-spacing: $letter-spacing;
     font-size: $font-size;
-    font-family: $font-family;
-    font-weight: $font-weight;
 }
 
 @mixin propiedadesbtncursos ($color, $display, $justify-content, $align-items, $font-size, $font-family, $width, $height, $margin, $padding, $border-radius, $box-shadow) {

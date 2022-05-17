@@ -1,168 +1,228 @@
+@charset "UTF-8";
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-.sizewhatsapp {
+.contenedor_index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 100px;
+  grid-template-areas: "menu" "main" "footer"; }
+
+@media scren and (min-width: 576px) {
+  .contenedor_institucional {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 100px;
+    grid-template-areas: "menu" "header" "main " "footer"; } }
+
+@media scren and (min-width: 768px) {
+  .contenedor_institucional {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "menu" "header" "main " "footer"; } }
+
+@media scren and (min-width: 1200px) {
+  .contenedor_institucional {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "menu" "header" "main " "footer"; } }
+
+@media scren and (min-width: 576px) {
+  .contenedor_encontranos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "menu" "header" "main" "footer"; } }
+
+@media scren and (min-width: 768px) {
+  .contenedor_encontranos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "menu   menu" "header header" "main main" "footer footer"; } }
+
+@media scren and (min-width: 1200px) {
+  .contenedor_encontranos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "menu   menu" "header header" "main main" "footer footer"; } }
+
+.contenedor_cursos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto 100px;
+  grid-template-areas: "menu " "header" "descripcion" "cursos" "footer"; }
+
+@media scren and (min-width: 576px) {
+  .contenedor_contactanos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto auto 100px;
+    grid-template-areas: "menu " "header" "main" "footer"; } }
+
+@media scren and (min-width: 768px) {
+  .contenedor_contactanos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto auto 100px;
+    grid-template-areas: "menu " "header" "main" "footer"; } }
+
+@media scren and (min-width: 1200px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "menu " "header" "main" "footer"; } }
+
+.sizewhatsapp, .sizeinstagram, .sizefacebook {
   width: 50px;
-  height: 50px;
-}
+  height: 50px; }
 
-.sizewhatsapp:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.sizeinstagram {
-  width: 50px;
-  height: 50px;
-}
+.sizewhatsapp:hover, .sizeinstagram:hover, .sizefacebook:hover {
+  transform: scale(1.1); }
 
 .sizeinstagram:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.sizefacebook {
-  width: 50px;
-  height: 48px;
-}
+  transform: scale(1.1); }
 
 .sizefacebook:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
+  transform: scale(1.1); }
 
 .redes {
-  padding: 10px;
-}
+  padding: 10px; }
 
 .logo {
   width: 80px;
   height: 80px;
-  margin: 3px;
-}
+  margin: 3px; }
+  .logo .logo:hover {
+    transform: scale(1.1); }
+    .logo .logo:hover .logo img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: left;
+      align-items: left; }
 
-.logo .logo:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
+a {
+  text-decoration: none;
+  color: #143666;
+  position: relative; }
 
-.logo .logo:hover .logo img {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+@media scren and (min-width: 1200px) {
+  .navbar-nav {
+    list-style: none;
+    position: relative;
+    font-size: 20px; }
+    .navbar-nav .nav-item {
+      margin: 20px;
+      color: #2E5399 !important; }
+  ul {
+    list-style: none;
+    position: relative; }
+    ul ul li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 20px;
+      letter-spacing: 2px;
+      padding: 10px;
+      margin: 2px;
+      text-align: center; }
+      ul ul li ul li a::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #2E5399;
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+        transform: scale(0);
+        transform-origin: left;
+        transition: transform .25s ease; }
+        ul ul li ul li a::after ul li a:hover::after {
+          transform: scale(1); }
+  .menu {
+    grid-area: menu;
+    color: #2E5399 !important;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
+    overflow: hidden; } }
+
+header {
+  grid-area: header;
+  background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-}
-
-.menu {
-  grid-area: menu;
-  background-color: white;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: wrap;
-          flex-direction: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #2E5399;
   font-family: Arial, Helvetica, sans-serif;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-}
+  font-size: 70px;
+  letter-spacing: 1px;
+  word-spacing: 3px; }
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  margin: auto; }
 
 footer {
   grid-area: footer;
   width: 100%;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.boton_index {
+  background-color: #fdfcfc;
+  margin: 20px;
+  padding: 10px;
+  border-width: 15px;
+  border-color: rgba(210, 159, 104, 0);
+  letter-spacing: 0px;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif; }
+  .boton_index .boton_index {
+    transition-duration: 0.4s; }
+    .boton_index .boton_index .boton_index:hover {
+      transform: scale(1.1);
+      background-color: #c8e4e7d2; }
 
 a {
   text-decoration: none;
   color: #2E5399;
-  position: relative;
-}
+  position: relative; }
 
-ul {
-  list-style: none;
-  position: relative;
-}
+.contenedor_index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 100px;
+  grid-template-areas: "menu" "main" "footer"; }
 
-ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.maincontenedor_index {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 20px;
-  letter-spacing: 2px;
-  padding: 0px;
-  margin: 2px;
-  text-align: center;
-}
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
 
-ul li li a::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: #2E5399;
-  position: absolute;
-  left: 0;
-  bottom: 0%;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform .25s ease;
-  transition: -webkit-transform .25s ease;
-  transition: transform .25s ease;
-  transition: transform .25s ease, -webkit-transform .25s ease;
-}
-
-ul li li a::after li a:hover::after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.main-contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.principal {
+.principal_index {
   grid-area: main;
   background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
   height: 1000px;
@@ -172,78 +232,425 @@ ul li li a::after li a:hover::after {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: wrap;
-          flex-direction: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  text-align: center; }
+  .principal_index .titulo_index {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    letter-spacing: 1px;
+    word-spacing: 3px; }
+    .principal_index .titulo_index .aprende_index {
+      font-size: 60px;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+      font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+      text-transform: uppercase;
+      color: #fdfcfc;
+      text-align: center; }
+      .principal_index .titulo_index .aprende_index .aprende_index:hover {
+        transform: scale(1); }
+        .principal_index .titulo_index .aprende_index .aprende_index:hover .lema {
+          font-weight: bold 90px;
+          font-size: 30px;
+          letter-spacing: 1px;
+          word-spacing: 3px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: #fdfcfc; }
+
+@media scren and (min-width: 576px) {
+  h1 {
+    text-align: center; } }
+
+@media scren and (min-width: 768px) {
+  h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: auto; } }
+
+@media scren and (min-width: 1200px) {
+  h1 {
+    text-align: center; } }
+
+.maincontainer_encontranos {
+  grid-area: main;
+  background-color: rgba(138, 138, 148, 0.233);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "trayectoria" "mision"; }
+
+.trayectoria, .mision {
+  grid-area: trayectoria;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.trayectoriacontenedor, .misionymetascontenedor {
+  width: min-content;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify; }
+
+.titulotrayectoria, .titulomision {
+  margin-left: 15px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #2E5399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  word-spacing: 3px; }
+
+.trayectoriaparrafo, .titulomision .misionparrafo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mision {
+  grid-area: mision; }
+
+.titulomision .mision-img {
+  height: 150px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px; }
+
+@media scren and (min-width: 768px) {
+  .titulomision .titulotrayectoria, .titulomision .titulomision {
+    margin-left: 15px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 3px; }
+  .titulomision .titulomision {
+    margin-left: 15px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 3px; } }
+
+@media scren and (min-width: 1200px) {
+  .titulotrayectoria, .titulomision {
+    margin-left: 15px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 3px; }
+  .titulomision {
+    margin-left: 15px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #2E5399;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 3px; } }
+
+.maincontainer_encontranos {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "mapa" "online"; }
+
+.titulo_mapa {
+  margin-left: 15px;
+  height: 70px;
+  position: absolute;
+  display: flex;
+  justify-content: left;
   text-align: center;
   flex-direction: wrap;
-}
-
-.titulo {
+  color: #2E5399;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold 90px;
-  font-size: 150px;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-}
-
-.aprende {
-  font-weight: bold 90px;
-  font-size: 60px;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
-  text-transform: uppercase;
-  color: #fdfcfc;
-  text-align: center;
-}
-
-.aprende:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.lema {
-  font-weight: bold 90px;
-  font-size: 30px;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-}
-
-h1 {
-  text-align: center;
-}
-
-.boton {
-  margin: 20px;
-  padding: 10px;
-  border-width: 15px;
-  border-color: rgba(210, 159, 104, 0);
-  border-radius: 100px;
-  letter-spacing: 0px;
   font-size: 35px;
-  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
-  font-weight: 700;
-  background-color: #fdfcfc;
-}
+  letter-spacing: 1px;
+  word-spacing: 3px; }
 
-.boton {
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
+.mapa {
+  grid-area: mapa;
+  display: flex;
+  flex-direction: column; }
 
-.boton:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: #c8e4e7d2;
-}
-/*# sourceMappingURL=style.css.map */
+.direccion {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: baseline;
+  font-family: Arial, Helvetica, sans-serif; }
+
+iframe {
+  padding: 15px;
+  margin: 35px; }
+
+.ubicacion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px; }
+
+.online-contenedor {
+  background-color: #80afff5b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  box-shadow: 5px 10px 5px gray;
+  border-radius: 4px;
+  width: 600px;
+  padding: 15px;
+  margin: 15px; }
+
+.online {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.online img {
+  height: 100%;
+  width: 100%; }
+
+.titulocursos {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2E5399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold 90px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  word-spacing: 3px; }
+
+.descripcion_mision {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  align-items: center;
+  justify-content: center; }
+
+.btncursos {
+  grid-area: descripcion;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "niños" "adolescentes" "adultos" "examenes"; }
+
+.btn-niños {
+  color: #143666;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  font-size: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  height: 280px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: #2E5399;
+  grid-area: niños;
+  background-image: url(assets\img\panel_camb_young_learners.jpg); }
+
+.btn-niños:hover {
+  transform: scale(1.1); }
+
+.btn-adolescentes {
+  color: #143666;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  font-size: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  height: 280px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: #2E5399;
+  grid-area: adolescentes;
+  background-image: url(assets\img\panel_adolescentes.jpg); }
+
+.btn-adolescentes:hover {
+  transform: scale(1.1); }
+
+.btn-adultos {
+  color: #143666;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  font-size: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  height: 280px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: #2E5399;
+  grid-area: adultos;
+  background-image: url(assets\img\panel_adultos.jpg); }
+
+.btn-adultos:hover {
+  transform: scale(1.1); }
+
+.btn-examenes {
+  color: #143666;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  font-size: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  height: 280px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: #2E5399;
+  grid-area: examenes;
+  background-image: url(assets\img\panel-cursos-cambridge-edited.jpg); }
+
+.btn-examenes:hover {
+  transform: scale(1.1); }
+
+.cardcontenedor {
+  grid-area: cursos;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px;
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "kids" "teens" "senior" "exams"; }
+
+.cardkinder {
+  grid-area: kids;
+  justify-content: center;
+  align-items: center; }
+
+.cardteens {
+  grid-area: teens;
+  justify-content: center;
+  align-items: center; }
+
+.cardsenior {
+  grid-area: senior;
+  justify-content: center;
+  align-items: center; }
+
+.cardexamenes {
+  grid-area: exams;
+  justify-content: center;
+  align-items: center; }
+
+h3 {
+  display: flex;
+  flex-direction: wrap;
+  display: inline-block;
+  align-items: stretch;
+  width: 180px;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #143666; }
+
+.listacursos li {
+  width: 180px;
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+.titulo {
+  margin-left: 15px;
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  flex-direction: wrap;
+  color: #2E5399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  letter-spacing: 1px;
+  word-spacing: 3px; }
+
+.maincontainer-contactanos {
+  grid-area: main;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px; }
+  .maincontainer-contactanos .contactanos-img {
+    display: none; }
+  .maincontainer-contactanos .contactanos-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center; }
+
+.contactanos-form {
+  width: 100%;
+  background-color: #80afff5b;
+  height: max-content;
+  box-shadow: 5px 10px 5px gray;
+  border-radius: 4px;
+  width: 600px;
+  padding: 15px;
+  margin: 15px; }
+  .contactanos-form .formulario {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px; }
+  .contactanos-form .form-input {
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    width: 100%;
+    border-radius: 4px;
+    height: 38px;
+    border: none; }
