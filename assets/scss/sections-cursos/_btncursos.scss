@@ -17,7 +17,7 @@
 .btn-niños {
     @include propiedadesbtncursos ($colorTerciario, flex, stretch, center, 25px, $font-family1, 300px, 280px, 20px, 5px, 10px, $colorPrimario);
     grid-area: niños;
-    background-image: url(../img/kids.jpg);
+    background-image: url(assets\img\panel_camb_young_learners.jpg);
 }
 
 .btn-niños:hover {
@@ -27,7 +27,7 @@
 .btn-adolescentes {
     @include propiedadesbtncursos ($colorTerciario, flex, stretch, center, 25px, $font-family1, 300px, 280px, 20px, 5px, 10px, $colorPrimario);
     grid-area: adolescentes;
-    background-image: url(../img/adolescentes.jpg);
+    background-image: url(assets\img\panel_adolescentes.jpg);
 }
 
 .btn-adolescentes:hover {
@@ -37,7 +37,7 @@
 .btn-adultos {
     @include propiedadesbtncursos ($colorTerciario, flex, stretch, center, 25px, $font-family1, 300px, 280px, 20px, 5px, 10px, $colorPrimario);
     grid-area: adultos;
-    background-image: url(../img/adultos.jpg);
+    background-image: url(assets\img\panel_adultos.jpg);
 
 }
 
@@ -48,7 +48,7 @@
 .btn-examenes {
     @include propiedadesbtncursos ($colorTerciario, flex, stretch, center, 25px, $font-family1, 300px, 280px, 20px, 5px, 10px, $colorPrimario);
     grid-area: examenes;
-    background-image: url(../img/examenes.jpg);
+    background-image: url(assets\img\panel-cursos-cambridge-edited.jpg);
 
 }
 
