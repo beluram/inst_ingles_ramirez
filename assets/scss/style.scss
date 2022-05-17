@@ -3,24 +3,34 @@
     padding: 0;
 }
 
-
-.contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 100px;
-    grid-template-areas: "menu"
-        "main"
-        "footer"
-}
+//imports comunes a todas las páginas//
 @import "./incommon/mixins";
 @import "./incommon/variables";
 @import "./breakpoints/breakpointsindex";
+@import "./breakpoints/grids";
 @import "./incommon/iconosnavfooter";
 @import "./incommon/menu";
 @import "./incommon/header";
+@import "./incommon/footer";
+
+//imports para index//
 @import "./sections-index/button";
 @import "./sections-index/maincontent";
-@import "./incommon/footer";
+
+//imports para institucional//
+@import "./sections-institucional/main-institucional";
+
+//import para encontranos//
+@import "./sections-encontranos/componentsencontranos";
+
+//imports para cursos//
+@import "./sections-cursos/btncursos";
+@import "./sections-cursos/cardscursos";
+@import "./sections-cursos/listcursos";
+
+//imports para contactanos//
+@import "./sections-contactanos/componentscontactanos";
+
 
 
 
