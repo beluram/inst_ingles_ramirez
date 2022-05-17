@@ -4,7 +4,7 @@ a {
     position: relative;
 }
 
-.contenedor {
+.contenedor_index {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 100px;
@@ -12,7 +12,7 @@ a {
         "main"
         "footer"
 }
-.main-contenedor{
+.maincontenedor_index{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -21,9 +21,9 @@ a {
     flex-direction: column;
 }
 
-.principal {
+.principal_index {
     grid-area: main;
-    background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
+    background-image: url(assets\img\maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
     height: 1000px;
     padding: 15px;
     margin-top: 15px;
@@ -35,13 +35,13 @@ a {
     justify-content: center;
     text-align: center;
 
-    .titulo {
+    .titulo_index {
         font-family: $font-family;
         font-size: 150px;
         letter-spacing: 1px;
         word-spacing: 3px;
 
-        .aprende {
+        .aprende_index {
             font-size: 60px;
             letter-spacing: 1px;
             word-spacing: 3px;
@@ -50,7 +50,7 @@ a {
             color: $colorSecundario;
             text-align: center;
 
-            .aprende:hover {
+            .aprende_index:hover {
                 transform: scale(1);
 
                 .lema {
