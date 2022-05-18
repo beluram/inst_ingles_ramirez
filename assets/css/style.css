@@ -282,7 +282,7 @@ a {
   letter-spacing: 1px;
   word-spacing: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #2E5399; }
+  color: #fdfcfc; }
 
 .maincontainer_institucional {
   grid-area: main;
@@ -587,23 +587,39 @@ iframe {
 
 .cardkinder {
   grid-area: kids;
-  justify-content: center;
-  align-items: center; }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center; }
 
 .cardteens {
   grid-area: teens;
-  justify-content: center;
-  align-items: center; }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center; }
 
 .cardsenior {
   grid-area: senior;
-  justify-content: center;
-  align-items: center; }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center; }
 
 .cardexamenes {
   grid-area: exams;
-  justify-content: center;
-  align-items: center; }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center; }
 
 h3 {
   display: flex;
@@ -618,9 +634,11 @@ h3 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #143666; }
 
-.listacursos li {
+.listacursos {
+  list-style: none;
+  line-height: 45px;
   width: 180px;
-  font-size: 24px;
+  font-size: 28px;
   padding: 10px;
   text-align: center;
   position: relative;

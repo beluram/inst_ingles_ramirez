@@ -22,20 +22,20 @@
 
     .cardkinder {
         grid-area: kids;
-        @include cardscursos (center, center);
+        @include cardscursos (flex, flex-start, center, column, wrap, center);
     }
 
     .cardteens {
         grid-area: teens;
-        @include cardscursos (center, center);
+        @include cardscursos (flex, flex-start, center, column, wrap, center);
     }
 
     .cardsenior {
         grid-area: senior;
-        @include cardscursos (center, center);
+        @include cardscursos (flex, flex-start, center, column, wrap, center);
     }
 
     .cardexamenes {
         grid-area: exams;
-        @include cardscursos (center, center);
+        @include cardscursos (flex, flex-start, center, column, wrap, center);
     }

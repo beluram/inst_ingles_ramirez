@@ -12,9 +12,11 @@ h3 {
     color: $colorTerciario;
 }
 
-.listacursos li {
+.listacursos {
+    list-style: none;
+    line-height: 45px;
     width: 180px;
-    font-size: 24px;
+    font-size: 28px;
     padding: 10px;
     text-align: center;
     position: relative;

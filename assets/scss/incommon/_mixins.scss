@@ -23,7 +23,11 @@
     box-shadow: $box-shadow;
 }
 
-@mixin cardscursos ($justify-content, $align-items) {
+@mixin cardscursos ($display, $justify-content, $align-items, $direction, $wrap, $align-content) {
+    display: $display;
     justify-content: $justify-content;
     align-items: $align-items;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    align-content: $align-content;
 }
