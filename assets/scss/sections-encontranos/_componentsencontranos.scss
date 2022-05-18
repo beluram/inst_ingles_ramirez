@@ -1,25 +1,33 @@
 .maincontainer_encontranos{
     grid-area: main;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 700px){
+    .maincontainer_encontranos{
+    grid-area: main;
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "mapa"
         "online";
 }
+}
 
 .titulo_mapa {
     margin-left: 15px;
     height: 70px;
     position: absolute;
-    display: flex;
-    justify-content: left;
-    text-align: center;
-    flex-direction: wrap;
     color: $colorPrimario;
     font-family: $font-family1;
-    font-weight: bold 90px;
     font-size: 35px;
     letter-spacing: 1px;
     word-spacing: 3px;
@@ -29,15 +37,18 @@
     grid-area: mapa;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .direccion {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: baseline;
-    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-family: $font-family1;
 }
 
 iframe {
@@ -55,8 +66,8 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
-    box-shadow: 5px 10px 5px gray;
+    height: 450px;
+    box-shadow: 5px 5px 5px gray;
     border-radius: 4px;
     width: 600px;
     padding: 15px;
@@ -79,12 +90,8 @@ iframe {
 
 .titulocursos {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: $colorPrimario;
     font-family: $font-family1;
-    font-weight: bold 90px;
     font-size: 35px;
     letter-spacing: 1px;
     word-spacing: 3px;
