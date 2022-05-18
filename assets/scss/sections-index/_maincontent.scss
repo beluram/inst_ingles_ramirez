@@ -4,6 +4,38 @@ a {
     position: relative;
 }
 
+@include media-up (sm) {
+    .titulo_index {
+        font-family: $font-family1;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        text-align: center;
+        font-size: 100px;
+    }
+}
+
+@include media-up (md) {
+    .titulo_index {
+        font-family: $font-family1;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        text-align: center;
+        font-size: 150px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .titulo_index {
+        font-family: $font-family1;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        text-align: center;
+        font-size: 200px;
+        margin: auto;
+    }
+}
+
 .contenedor_index {
     display: grid;
     grid-template-columns: 1fr;
@@ -12,9 +44,9 @@ a {
         "main"
         "footer"
 }
-.maincontenedor_index{
+
+.maincontenedor_index {
     display: flex;
-    flex-wrap: wrap;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -34,60 +66,26 @@ a {
     display: flex;
     justify-content: center;
     text-align: center;
-
-    .titulo_index {
-        font-family: $font-family1;
-        font-size: 150px;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-
-        .aprende_index {
-            font-size: 60px;
-            letter-spacing: 1px;
-            word-spacing: 3px;
-            font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
-            text-transform: uppercase;
-            color: $colorSecundario;
-            text-align: center;
-
-            .aprende_index:hover {
-                transform: scale(1);
-
-                .lema {
-                    font-weight: bold 90px;
-                    font-size: 30px;
-                    letter-spacing: 1px;
-                    word-spacing: 3px;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    color: $colorSecundario;
-
-                }
-            }
-
-        }
-
-    }
 }
 
-@include media-up (sm) {
-    h1 {
-        text-align: center;
-    }
+.aprende_index {
+    font-size: 60px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    text-transform: uppercase;
+    color: $colorSecundario;
+    text-align: center;
 }
 
-@include media-up (md) {
-    h1 {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 200px;
-        margin-bottom: auto;
-    }
+.aprende_index:hover {
+    transform: scale(1);
 }
 
-@include media-up (lg) {
-    h1 {
-        text-align: center;
-        
-    }
+.lema {
+    font-size: 30px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $colorPrimario;
 }

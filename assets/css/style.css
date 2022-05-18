@@ -92,7 +92,10 @@
   transform: scale(1.1); }
 
 .redes {
-  padding: 10px; }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px; }
 
 .logo {
   width: 80px;
@@ -112,53 +115,48 @@ a {
   color: #143666;
   position: relative; }
 
+.menu {
+  width: 100%;
+  background-color: white;
+  grid-area: menu;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  position: sticky;
+  top: 0;
+  overflow: hidden; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #2e5399; }
+
 @media scren and (min-width: 1200px) {
   .navbar-nav {
     list-style: none;
     position: relative;
-    font-size: 20px; }
+    display: flex;
+    justify-content: space-between; }
     .navbar-nav .nav-item {
-      margin: 20px;
       color: #2E5399 !important; }
   ul {
     list-style: none;
     position: relative; }
-    ul ul li {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-size: 20px;
-      letter-spacing: 2px;
-      padding: 10px;
-      margin: 2px;
-      text-align: center; }
-      ul ul li ul li a::after {
-        content: "";
-        width: 100%;
-        height: 2px;
-        background-color: #2E5399;
-        position: absolute;
-        left: 0;
-        bottom: 0%;
-        transform: scale(0);
-        transform-origin: left;
-        transition: transform .25s ease; }
-        ul ul li ul li a::after ul li a:hover::after {
-          transform: scale(1); }
-  .menu {
-    grid-area: menu;
-    color: #2E5399 !important;
-    background-color: white;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    position: sticky;
-    top: 0;
-    overflow: hidden; } }
+    ul ul li a::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #2E5399;
+      position: absolute;
+      left: 0;
+      bottom: 0%;
+      transform: scale(0);
+      transform-origin: left;
+      transition: transform .25s ease; }
+      ul ul li a::after ul li a:hover::after {
+        transform: scale(1); } }
 
-header {
+.principal {
   grid-area: header;
   background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
   height: 300px;
@@ -179,6 +177,10 @@ h1 {
   text-align: center;
   margin: auto; }
 
+@media (max-width: 600px) {
+  h1 {
+    font-size: 70px; } }
+
 footer {
   grid-area: footer;
   width: 100%;
@@ -189,24 +191,51 @@ footer {
   font-family: Arial, Helvetica, sans-serif; }
 
 .boton_index {
-  background-color: #fdfcfc;
+  transition: background-color 300ms ease 0ms, border-radius 300ms ease 0ms;
   margin: 20px;
   padding: 10px;
   border-width: 15px;
   border-color: rgba(210, 159, 104, 0);
+  border-radius: 100px;
   letter-spacing: 0px;
   font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif; }
-  .boton_index .boton_index {
-    transition-duration: 0.4s; }
-    .boton_index .boton_index .boton_index:hover {
-      transform: scale(1.1);
-      background-color: #c8e4e7d2; }
+  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  background-color: #fdfcfc; }
+
+.boton_index:hover::after {
+  transform: scale(1.1); }
 
 a {
   text-decoration: none;
   color: #2E5399;
   position: relative; }
+
+@media scren and (min-width: 576px) {
+  .titulo_index {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: center;
+    font-size: 100px; } }
+
+@media scren and (min-width: 768px) {
+  .titulo_index {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: center;
+    font-size: 150px;
+    margin: auto; } }
+
+@media (min-width: 1200px) {
+  .titulo_index {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: center;
+    font-size: 200px;
+    margin: auto; } }
 
 .contenedor_index {
   display: grid;
@@ -216,7 +245,6 @@ a {
 
 .maincontenedor_index {
   display: flex;
-  flex-wrap: wrap;
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -235,84 +263,63 @@ a {
   display: flex;
   justify-content: center;
   text-align: center; }
-  .principal_index .titulo_index {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 150px;
-    letter-spacing: 1px;
-    word-spacing: 3px; }
-    .principal_index .titulo_index .aprende_index {
-      font-size: 60px;
-      letter-spacing: 1px;
-      word-spacing: 3px;
-      font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
-      text-transform: uppercase;
-      color: #fdfcfc;
-      text-align: center; }
-      .principal_index .titulo_index .aprende_index .aprende_index:hover {
-        transform: scale(1); }
-        .principal_index .titulo_index .aprende_index .aprende_index:hover .lema {
-          font-weight: bold 90px;
-          font-size: 30px;
-          letter-spacing: 1px;
-          word-spacing: 3px;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-          color: #fdfcfc; }
 
-@media scren and (min-width: 576px) {
-  h1 {
-    text-align: center; } }
+.aprende_index {
+  font-size: 60px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+  text-transform: uppercase;
+  color: #fdfcfc;
+  text-align: center; }
 
-@media scren and (min-width: 768px) {
-  h1 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
-    margin-bottom: auto; } }
+.aprende_index:hover {
+  transform: scale(1); }
 
-@media scren and (min-width: 1200px) {
-  h1 {
-    text-align: center; } }
+.lema {
+  font-size: 30px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2E5399; }
 
-.maincontainer_encontranos {
+.maincontainer_institucional {
   grid-area: main;
   background-color: rgba(138, 138, 148, 0.233);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "trayectoria" "mision"; }
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+@media (max-width: 600px) {
+  .maincontainer_institucional {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "trayectoria" "mision"; } }
 
 .trayectoria, .mision {
   grid-area: trayectoria;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
   align-items: center; }
 
 .trayectoriacontenedor, .misionymetascontenedor {
   width: min-content;
-  justify-content: space-between;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: justify; }
-
-.titulotrayectoria, .titulomision {
-  margin-left: 15px;
-  height: 35px;
-  position: relative;
   display: flex;
   justify-content: center;
-  color: #2E5399;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  letter-spacing: 1px;
-  word-spacing: 3px; }
+  text-align: justify;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center; }
 
-.trayectoriaparrafo, .titulomision .misionparrafo {
+.trayectoriaparrafo, .misionparrafo {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   display: flex;
@@ -322,14 +329,13 @@ a {
 .mision {
   grid-area: mision; }
 
-.titulomision .mision-img {
-  height: 150px;
-  width: 300px;
+.mision-img {
+  height: 350px;
   padding: 20px;
   border-radius: 5px; }
 
 @media scren and (min-width: 768px) {
-  .titulomision .titulotrayectoria, .titulomision .titulomision {
+  .titulotrayectoria {
     margin-left: 15px;
     height: 70px;
     position: relative;
@@ -340,7 +346,7 @@ a {
     font-size: 35px;
     letter-spacing: 1px;
     word-spacing: 3px; }
-  .titulomision .titulomision {
+  .titulomision {
     margin-left: 15px;
     height: 70px;
     position: relative;
@@ -353,7 +359,7 @@ a {
     word-spacing: 3px; } }
 
 @media scren and (min-width: 1200px) {
-  .titulotrayectoria, .titulomision {
+  .titulotrayectoria {
     margin-left: 15px;
     height: 70px;
     position: relative;

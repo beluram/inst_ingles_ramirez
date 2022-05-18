@@ -1,15 +1,20 @@
-.maincontainer_encontranos {
+.maincontainer_institucional {
     grid-area: main;
     background-color: rgba(138, 138, 148, 0.233);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "trayectoria"
-        "mision";
+}
+
+@media (max-width: 600px) {
+    .maincontainer_institucional {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "trayectoria"
+            "mision";
+    }
 }
 
 .trayectoria {
@@ -17,28 +22,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
 }
 
 .trayectoriacontenedor {
     width: min-content;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
     font-family: $font-family1;
     text-align: justify;
-}
-
-.titulotrayectoria {
-    margin-left: 15px;
-    height: 35px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    color: $colorPrimario;
-    font-family: $font-family1;
-    font-size: 15px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
 
 .trayectoriaparrafo {
@@ -58,47 +57,41 @@
     @extend .trayectoriacontenedor;
 }
 
-.titulomision {
-    @extend .titulotrayectoria;
+.misionparrafo {
+    @extend .trayectoriaparrafo;
+}
 
-    .misionparrafo {
-        @extend .trayectoriaparrafo;
+.mision-img {
+    height: 350px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@include media-up (md) {
+    .titulotrayectoria {
+        margin-left: 15px;
+        height: 70px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: $colorPrimario;
+        font-family: $font-family1;
+        font-size: 35px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
     }
 
-    .mision-img {
-        height: 150px;
-        width: 300px;
-        padding: 20px;
-        border-radius: 5px;
-    }
-
-    @include media-up (md) {
-        .titulotrayectoria {
-            margin-left: 15px;
-            height: 70px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            color: $colorPrimario;
-            font-family: $font-family1;
-            font-size: 35px;
-            letter-spacing: 1px;
-            word-spacing: 3px;
-        }
-
-        .titulomision {
-            margin-left: 15px;
-            height: 70px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            color: $colorPrimario;
-            font-family: $font-family1;
-            font-size: 35px;
-            letter-spacing: 1px;
-            word-spacing: 3px;
-        }
-
+    .titulomision {
+        margin-left: 15px;
+        height: 70px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: $colorPrimario;
+        font-family: $font-family1;
+        font-size: 35px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
     }
 }
 
@@ -126,6 +119,7 @@
         font-family: $font-family1;
         font-size: 35px;
         letter-spacing: 1px;
-        word-spacing: 3px;;
+        word-spacing: 3px;
+        ;
     }
 }

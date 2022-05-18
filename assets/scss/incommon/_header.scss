@@ -1,5 +1,5 @@
 
-header {
+.principal {
     grid-area: header;
     background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
     height: 300px;
@@ -20,4 +20,10 @@ h1 {
     font-size: 100px;
     text-align: center;
     margin: auto;
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: 70px;
+    }
 }

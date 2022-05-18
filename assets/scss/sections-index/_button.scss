@@ -1,14 +1,17 @@
-   
-.boton_index {
-    @include propiedadesBotonIndex (#fdfcfc, 20px, 10px, 15px, rgba(210, 159, 104, 0), 100px, 0px, 35px);
-    font-family: Arial, Helvetica, sans-serif;
+   .boton_index {
+       transition: background-color 300ms ease 0ms, border-radius 300ms ease 0ms;
+       margin: 20px;
+       padding: 10px;
+       border-width: 15px;
+       border-color: rgba(210, 159, 104, 0);
+       border-radius: 100px;
+       letter-spacing: 0px;
+       font-size: 35px;
+       font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+       font-weight: 700;
+       background-color: #fdfcfc;
+   }
 
-    .boton_index {
-        transition-duration: 0.4s;
-
-        .boton_index:hover {
-            transform: scale(1.1);
-            background-color: #c8e4e7d2;
-        }
-    }
-}
+   .boton_index:hover::after {
+       transform: scale(1.1);
+   }
