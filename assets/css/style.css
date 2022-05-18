@@ -126,7 +126,8 @@ a {
   font-size: 25px;
   position: sticky;
   top: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
 
 .navbar-light .navbar-nav .nav-link {
   color: #2e5399; }
