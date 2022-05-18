@@ -5,32 +5,37 @@
     justify-content: space-around;
     padding: 15px;
     margin: 15px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "kids"
-        "teens"
-        "senior"
-        "exams";
 }
+    @media (max-width: 600px) {
+        .cardcontenedor {
+            grid-area: cursos;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "kids"
+                "teens"
+                "senior"
+                "exams";
+        }
+    }
 
 
-.cardkinder {
-    grid-area: kids;
-    @include cardscursos (center, center);
-}
+    .cardkinder {
+        grid-area: kids;
+        @include cardscursos (center, center);
+    }
 
-.cardteens {
-    grid-area: teens;
-    @include cardscursos (center, center);
-}
+    .cardteens {
+        grid-area: teens;
+        @include cardscursos (center, center);
+    }
 
-.cardsenior {
-    grid-area: senior;
-    @include cardscursos (center, center);
-}
+    .cardsenior {
+        grid-area: senior;
+        @include cardscursos (center, center);
+    }
 
-.cardexamenes {
-    grid-area: exams;
-    @include cardscursos (center, center);
-}
+    .cardexamenes {
+        grid-area: exams;
+        @include cardscursos (center, center);
+    }
