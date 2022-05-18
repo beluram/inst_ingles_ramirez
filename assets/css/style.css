@@ -290,7 +290,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 @media (max-width: 600px) {
   .maincontainer_institucional {
