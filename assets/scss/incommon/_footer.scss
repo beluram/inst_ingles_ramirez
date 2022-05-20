@@ -7,3 +7,22 @@ footer {
     align-items: center;
     font-family: $font-family1;
 }
+
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 5px;
+    }
+}
+
+@media (min-width: 600px) {
+    footer {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer {
+        font-size: 15px;
+    }
+}

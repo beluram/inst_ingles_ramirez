@@ -91,6 +91,16 @@
 .sizefacebook:hover {
   transform: scale(1.1); }
 
+@media (max-width: 500px) {
+  .sizewhatsapp, .sizeinstagram, .sizefacebook {
+    width: 20px;
+    height: 20px; } }
+
+@media (max-width: 800px) {
+  .sizewhatsapp, .sizeinstagram, .sizefacebook {
+    width: 30px;
+    height: 30px; } }
+
 .redes {
   display: flex;
   justify-content: space-around;
@@ -110,9 +120,19 @@
       justify-content: left;
       align-items: left; }
 
+@media (max-width: 500px) {
+  .logo {
+    width: 30px;
+    height: 30px; } }
+
+@media (max-width: 800px) {
+  .logo {
+    width: 40px;
+    height: 40px; } }
+
 a {
   text-decoration: none;
-  color: #143666;
+  color: #2E5399;
   position: relative; }
 
 .menu {
@@ -192,6 +212,18 @@ footer {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif; }
 
+@media (max-width: 600px) {
+  footer {
+    font-size: 5px; } }
+
+@media (min-width: 600px) {
+  footer {
+    font-size: 15px; } }
+
+@media (min-width: 1200px) {
+  footer {
+    font-size: 15px; } }
+
 .boton_index {
   transition: background-color 300ms ease 0ms, border-radius 300ms ease 0ms;
   margin: 20px;
@@ -200,44 +232,26 @@ footer {
   border-color: rgba(210, 159, 104, 0);
   border-radius: 100px;
   letter-spacing: 0px;
-  font-size: 35px;
-  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
-  font-weight: 700;
-  background-color: #fdfcfc; }
+  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif; }
 
-.boton_index:hover::after {
-  transform: scale(1.1); }
+@media scren and (min-width: 576px) {
+  font-size: 25px;
+  font-weight: 700; }
+
+@media scren and (min-width: 768px) {
+  .boton_index {
+    font-size: 30px;
+    font-weight: 700; } }
+
+@media (min-width: 1200px) {
+  .boton_index {
+    font-size: 35px;
+    font-weight: 700; } }
 
 a {
   text-decoration: none;
   color: #2E5399;
   position: relative; }
-
-@media scren and (min-width: 576px) {
-  .titulo_index {
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    text-align: center;
-    font-size: 100px; } }
-
-@media scren and (min-width: 768px) {
-  .titulo_index {
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    text-align: center;
-    font-size: 150px;
-    margin: auto; } }
-
-@media (min-width: 1200px) {
-  .titulo_index {
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    text-align: center;
-    font-size: 200px;
-    margin: auto; } }
 
 .contenedor_index {
   display: grid;
@@ -247,43 +261,11 @@ a {
 
 .maincontenedor_index {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-content: center;
-  align-items: center;
   justify-content: center;
-  flex-direction: column; }
-
-.principal_index {
-  grid-area: main;
-  background-image: url(../img/maestra-jardin-infantes-sosteniendo-cuaderno_23-2148633311.webp);
-  height: 1000px;
-  padding: 15px;
-  margin-top: 15px;
-  color: #2E5399;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  text-align: center; }
-
-.aprende_index {
-  font-size: 60px;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
-  text-transform: uppercase;
-  color: #fdfcfc;
-  text-align: center; }
-
-.aprende_index:hover {
-  transform: scale(1); }
-
-.lema {
-  font-size: 30px;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #fdfcfc; }
+  align-items: center; }
 
 .maincontainer_institucional {
   grid-area: main;
