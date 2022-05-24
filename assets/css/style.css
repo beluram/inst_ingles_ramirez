@@ -248,6 +248,9 @@ footer {
     font-size: 35px;
     font-weight: 700; } }
 
+.btn {
+  margin: 15px; }
+
 a {
   text-decoration: none;
   color: #2E5399;
@@ -268,6 +271,7 @@ a {
   align-items: center; }
 
 .card_container {
+  display: flex;
   margin: 5px;
   padding: 15px; }
 
@@ -276,6 +280,9 @@ a {
 
 .card:hover {
   transform: scale(1.1); }
+
+.card-encontranos {
+  display: flex; }
 
 .maincontainer_institucional {
   grid-area: main;

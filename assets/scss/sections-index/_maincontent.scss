@@ -23,6 +23,7 @@ a {
 }
 
 .card_container {
+    display: flex;
     margin: 5px;
     padding: 15px;
 }
@@ -33,4 +34,8 @@ a {
 
 .card:hover{
      transform: scale(1.1);
+}
+
+.card-encontranos{
+    display: flex;
 }
