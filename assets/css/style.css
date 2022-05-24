@@ -271,6 +271,12 @@ a {
   margin: 5px;
   padding: 15px; }
 
+.card {
+  transition: transform .2s; }
+
+.card:hover {
+  transform: scale(1.1); }
+
 .maincontainer_institucional {
   grid-area: main;
   background-color: rgba(138, 138, 148, 0.233);

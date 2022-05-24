@@ -13,7 +13,7 @@ a {
         "footer"
 }
 
-.maincontenedor_index{
+.maincontenedor_index {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -22,7 +22,15 @@ a {
     align-items: center;
 }
 
-.card_container{
+.card_container {
     margin: 5px;
     padding: 15px;
+}
+
+.card{
+    transition: transform .2s;
+}
+
+.card:hover{
+     transform: scale(1.1);
 }
