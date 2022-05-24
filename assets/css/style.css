@@ -267,6 +267,10 @@ a {
   justify-content: center;
   align-items: center; }
 
+.card_container {
+  margin: 5px;
+  padding: 15px; }
+
 .maincontainer_institucional {
   grid-area: main;
   background-color: rgba(138, 138, 148, 0.233);
