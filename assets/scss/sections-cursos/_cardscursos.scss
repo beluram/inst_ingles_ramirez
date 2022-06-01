@@ -2,7 +2,7 @@
     grid-area: cursos;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 15px;
     margin: 15px;
 }
@@ -23,13 +23,13 @@
     .cardkinder {
         grid-area: kids;
         @include cardscursos (flex, flex-start, center, column, wrap, center);
+
     }
 
     .cardteens {
         grid-area: teens;
         @include cardscursos (flex, flex-start, center, column, wrap, center);
-    }
-
+  }
     .cardsenior {
         grid-area: senior;
         @include cardscursos (flex, flex-start, center, column, wrap, center);
