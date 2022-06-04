@@ -1,5 +1,6 @@
 .btncursos {
     grid-area: descripcion;
+    overflow-x: hidden !important;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

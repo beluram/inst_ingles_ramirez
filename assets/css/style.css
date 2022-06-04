@@ -490,6 +490,7 @@ iframe {
 
 .btncursos {
   grid-area: descripcion;
+  overflow-x: hidden !important;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -582,9 +583,9 @@ iframe {
 
 .cardcontenedor {
   grid-area: cursos;
+  overflow-x: hidden !important;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding: 15px;
   margin: 15px; }
 

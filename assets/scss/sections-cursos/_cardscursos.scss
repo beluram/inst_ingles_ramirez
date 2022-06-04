@@ -1,8 +1,9 @@
+// lista de cursos//
 .cardcontenedor {
     grid-area: cursos;
+    overflow-x: hidden !important;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 15px;
     margin: 15px;
 }
@@ -19,7 +20,7 @@
         }
     }
 
-
+//estilo de la lista de los cursos//
     .cardkinder {
         grid-area: kids;
         @include cardscursos (flex, flex-start, center, column, wrap, center);
