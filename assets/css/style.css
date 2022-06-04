@@ -482,8 +482,10 @@ iframe {
   letter-spacing: 1px;
   word-spacing: 3px; }
 
-.descripcion_mision {
+.descripcion_online {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 10px;
   font-size: 25px;
   text-align: justify;
   align-items: center;
@@ -679,7 +681,7 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   margin: 50px; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     .maincontainer-contactanos .contactanos-img {
       display: none; } }
   .maincontainer-contactanos .contactanos-img img {
