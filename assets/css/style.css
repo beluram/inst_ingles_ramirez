@@ -290,9 +290,10 @@ a {
   background-color: rgba(138, 138, 148, 0.233);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center; }
 
 @media (max-width: 600px) {
   .maincontainer_institucional {
@@ -303,6 +304,7 @@ a {
 
 .trayectoria, .mision {
   grid-area: trayectoria;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -311,7 +313,6 @@ a {
   align-items: center; }
 
 .trayectoriacontenedor, .misionymetascontenedor {
-  width: min-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,9 +334,18 @@ a {
   grid-area: mision; }
 
 .mision-img {
-  height: 350px;
+  width: 100%;
   padding: 20px;
   border-radius: 5px; }
+
+@media (max-width: 1500px) {
+  .videoinstitucional {
+    width: 100%; } }
+
+@media (min-width: 1500px) {
+  .videoinstitucional {
+    width: 850px;
+    height: 550px; } }
 
 @media scren and (min-width: 768px) {
   .titulotrayectoria {

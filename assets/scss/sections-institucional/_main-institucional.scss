@@ -3,9 +3,10 @@
     background-color: rgba(138, 138, 148, 0.233);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
 }
 
 @media (max-width: 600px) {
@@ -20,6 +21,7 @@
 
 .trayectoria {
     grid-area: trayectoria;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +31,6 @@
 }
 
 .trayectoriacontenedor {
-    width: min-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,11 +64,21 @@
 }
 
 .mision-img {
-    height: 350px;
+    width: 100%;
     padding: 20px;
     border-radius: 5px;
 }
-
+@media (max-width: 1500px) {
+    .videoinstitucional {
+    width: 100%;
+}
+}
+@media (min-width: 1500px) {
+.videoinstitucional {
+    width: 850px;
+    height: 550px;
+}
+}
 @include media-up (md) {
     .titulotrayectoria {
         margin-left: 15px;
