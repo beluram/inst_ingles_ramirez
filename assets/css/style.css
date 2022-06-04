@@ -397,6 +397,7 @@ a {
 
 .maincontainer_encontranos {
   grid-area: main;
+  overflow-x: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
