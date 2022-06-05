@@ -68,17 +68,20 @@
     padding: 20px;
     border-radius: 5px;
 }
+
 @media (max-width: 1500px) {
     .videoinstitucional {
-    width: 100%;
+        width: 100%;
+    }
 }
-}
+
 @media (min-width: 1500px) {
-.videoinstitucional {
-    width: 850px;
-    height: 550px;
+    .videoinstitucional {
+        width: 850px;
+        height: 550px;
+    }
 }
-}
+
 @include media-up (md) {
     .titulotrayectoria {
         margin-left: 15px;

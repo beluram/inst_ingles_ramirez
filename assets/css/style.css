@@ -215,7 +215,7 @@ footer {
 
 @media (max-width: 600px) {
   footer {
-    font-size: 5px; } }
+    font-size: 10px; } }
 
 @media (min-width: 600px) {
   footer {
@@ -223,7 +223,7 @@ footer {
 
 @media (min-width: 1200px) {
   footer {
-    font-size: 15px; } }
+    font-size: 20px; } }
 
 .boton_index {
   transition: background-color 300ms ease 0ms, border-radius 300ms ease 0ms;
@@ -397,8 +397,8 @@ a {
 
 .maincontainer_encontranos {
   grid-area: main;
-  overflow: hidden !important;
   display: flex;
+  z-index: 1;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;

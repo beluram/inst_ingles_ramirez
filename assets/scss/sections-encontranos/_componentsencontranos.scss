@@ -1,7 +1,7 @@
 .maincontainer_encontranos {
     grid-area: main;
-    overflow: hidden !important;
     display: flex;
+    z-index: 1;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -28,6 +28,7 @@
         height: 500px;
         width: 400px;
     }
+
     iframe {
         height: 100%;
         width: 100%;
