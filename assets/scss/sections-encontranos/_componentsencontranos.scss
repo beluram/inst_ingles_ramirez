@@ -1,6 +1,6 @@
-.maincontainer_encontranos{
+.maincontainer_encontranos {
     grid-area: main;
-    overflow-x: hidden;
+    overflow: hidden !important;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -8,19 +8,41 @@
     align-items: center;
 }
 
-@media (max-width: 700px){
-    .maincontainer_encontranos{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "mapa"
-        "online";
+@media (max-width: 700px) {
+    .maincontainer_encontranos {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "mapa"
+            "online";
+    }
+
+    .descripcion_online {
+        font-size: 20px;
+    }
+
+    .online-contenedor {
+        height: 500px;
+        width: 400px;
+    }
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
 }
+
+@media (min-width: 700px) {
+    .descripcion_online {
+        font-size: 25px;
+    }
+
+    .online-contenedor {
+        height: 500px;
+        width: 600px;
+    }
 }
 
 .titulo_mapa {
@@ -67,10 +89,7 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px;
     box-shadow: 5px 5px 5px gray;
-    border-radius: 4px;
-    width: 600px;
     padding: 15px;
     margin: 15px;
 }
@@ -102,7 +121,6 @@ iframe {
     font-family: $font-family1;
     margin: 10px;
     padding: 10px;
-    font-size: 25px;
     text-align: justify;
     align-items: center;
     justify-content: center;
